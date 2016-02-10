@@ -1,0 +1,69 @@
+@import "basefiles/base";
+// Import Bootstrap Compass integration
+@import "basefiles/bootstrap-compass";
+// Import Bootstrap for Sass
+@import "basefiles/bootstrap";
+
+body {
+    // background: url('../img/homepage_legend_concept_02.png') no-repeat center center fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // background-size: cover;
+    // -o-background-size: cover;
+}
+
+.lborder{border-left: 1px solid #ccc;}
+.rborder{border-right: 1px solid #ccc;}
+.tborder{border-top: 1px solid #ccc;}
+.bborder{border-bottom: 1px solid #ccc;}
+.fborder{border: 1px solid #ccc;}
+
+#featured{
+	margin-top:40px
+}
+
+#feat1{height:450px}
+#feat2{height:300px}
+// #feat3{height:450px}
+// #feat4{height:450px}
+#logo{
+  height:90px;
+  width:245px;
+}
+
+#header_ad{
+  height:90px;
+  width:728px;
+  display: block;
+  float: right;
+}
+
+.blog-masthead {
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+ 
+}
+
+.spacer{
+  height:75px;
+}
+.spacer45{
+  height:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
