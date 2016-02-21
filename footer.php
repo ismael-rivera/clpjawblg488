@@ -3,24 +3,15 @@
         <div class="container">
         	<div class="row">
         		<div class="col-sm-3"></div>
-          		<div class="col-sm-3">
+          		<!-- <div class="col-sm-3">
           			<ul>
           				<li>link</li>
           				<li>link</li>
           				<li>link</li>
           				<li>link</li>
           			</ul>
-          		</div>
-          		<div class="col-sm-3">
-          			<ul>
-          				<li>link</li>
-          				<li>link</li>
-          				<li>link</li>
-          				<li>link</li>
-          				<li>link</li>
-          			</ul>
-          		</div>
-          		<div class="col-sm-3">
+          		</div> -->
+          		<!-- <div class="col-sm-3">
           			<ul>
           				<li>link</li>
           				<li>link</li>
@@ -28,7 +19,16 @@
           				<li>link</li>
           				<li>link</li>
           			</ul>
-          		</div>
+          		</div> -->
+          		<!-- <div class="col-sm-3">
+          			<ul>
+          				<li>link</li>
+          				<li>link</li>
+          				<li>link</li>
+          				<li>link</li>
+          				<li>link</li>
+          			</ul>
+          		</div> -->
       		</div>
       	</div>
       	<div class="spacer"></div> 
