@@ -22,6 +22,8 @@ CONTENTS:
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
+@import "assets/css/libs/mobi/jquery.mobile.custom.structure.min.css";
+@import "assets/css/libs/mobi/jquery.mobile.custom.theme.min.css";
 @import "assets/css/site.css";
 
 

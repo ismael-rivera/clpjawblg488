@@ -432,8 +432,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1448406395);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1448406395#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1448406395) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1448406395) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1448406395) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1448406395#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../sass/basefiles/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8856,53 +8856,56 @@ button.close {
     display: none !important;
   }
 }
-/* line 15, ../sass/site.scss */
+/* line 17, ../sass/site.scss */
 .lborder {
   border-left: 1px solid #ccc;
 }
 
-/* line 16, ../sass/site.scss */
+/* line 18, ../sass/site.scss */
 .rborder {
   border-right: 1px solid #ccc;
 }
 
-/* line 17, ../sass/site.scss */
+/* line 19, ../sass/site.scss */
 .tborder {
   border-top: 1px solid #ccc;
 }
 
-/* line 18, ../sass/site.scss */
+/* line 20, ../sass/site.scss */
 .bborder {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 19, ../sass/site.scss */
+/* line 21, ../sass/site.scss */
 .fborder {
   border: 1px solid #ccc;
 }
 
-/* line 21, ../sass/site.scss */
+/* line 23, ../sass/site.scss */
 #featured {
   margin-top: 40px;
 }
 
-/* line 25, ../sass/site.scss */
+/* line 27, ../sass/site.scss */
 #feat1 {
   height: 450px;
 }
 
-/* line 26, ../sass/site.scss */
+/* line 28, ../sass/site.scss */
 #feat2 {
   height: 300px;
 }
 
-/* line 29, ../sass/site.scss */
-#logo {
-  height: 90px;
-  width: 245px;
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  /* line 31, ../sass/site.scss */
+  #logo {
+    height: 90px;
+    width: 100%;
+    font-size: 25px;
+  }
 }
 
-/* line 34, ../sass/site.scss */
+/* line 39, ../sass/site.scss */
 #header_ad {
   height: 90px;
   width: 728px;
@@ -8910,18 +8913,18 @@ button.close {
   float: right;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 46, ../sass/site.scss */
 .blog-masthead {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 47, ../sass/site.scss */
+/* line 52, ../sass/site.scss */
 .spacer {
   height: 75px;
 }
 
-/* line 50, ../sass/site.scss */
+/* line 55, ../sass/site.scss */
 .spacer45 {
   height: 45px;
 }

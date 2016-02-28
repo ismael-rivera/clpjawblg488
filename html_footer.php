@@ -1,6 +1,6 @@
     </div> <!-- /container -->
-
-
+    </div>
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -9,11 +9,6 @@
     <script src="assets/js/libs/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/libs/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
-$(document).ready(function(){
-    $('#header').slicknav();
-});
-</script>
-    <script src="//localhost:35729/livereload.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>  
 </body>
 </html>

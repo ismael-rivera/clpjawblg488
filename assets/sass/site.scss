@@ -12,6 +12,8 @@ body {
     // -o-background-size: cover;
 }
 
+
+
 .lborder{border-left: 1px solid #ccc;}
 .rborder{border-right: 1px solid #ccc;}
 .tborder{border-top: 1px solid #ccc;}
@@ -27,8 +29,11 @@ body {
 // #feat3{height:450px}
 // #feat4{height:450px}
 #logo{
-  height:90px;
-  width:245px;
+  @include screen(0px, 599px) {
+    height:90px;
+    width:100%;
+    font-size:25px;
+  } 
 }
 
 #header_ad{

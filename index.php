@@ -1,5 +1,5 @@
 <?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header' ) ); ?>
-
+<div data-role="content">
 <?php
 $args = array( 'posts_per_page' => 4, 'category_name' => 'featured' );
 $i = 0;
@@ -116,5 +116,5 @@ foreach($custom_posts as $post) : setup_postdata($post);?>
     </div>
 
     <div class="spacer"></div> 
-
+</div>
 <?php Starkers_Utilities::get_template_parts( array( 'footer','html_footer') ); ?>

@@ -36,6 +36,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <?php wp_head(); ?>
-  </head <?php body_class(); ?>>
+  </head>
 
   

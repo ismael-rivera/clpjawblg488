@@ -1,3 +1,4 @@
+<div data-role="footer">
 <footer class="footer tborder">
 		<div class="spacer45"></div>
         <div class="container">
