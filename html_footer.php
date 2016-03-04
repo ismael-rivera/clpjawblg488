@@ -1,5 +1,4 @@
     </div> <!-- /container -->
-    </div>
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -9,6 +8,6 @@
     <script src="assets/js/libs/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/libs/ie10-viewport-bug-workaround.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>  
+    <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

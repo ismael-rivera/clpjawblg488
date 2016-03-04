@@ -8857,47 +8857,52 @@ button.close {
   }
 }
 /* line 17, ../sass/site.scss */
+.red {
+  background-color: #BA0303;
+}
+
+/* line 19, ../sass/site.scss */
 .lborder {
   border-left: 1px solid #ccc;
 }
 
-/* line 18, ../sass/site.scss */
+/* line 20, ../sass/site.scss */
 .rborder {
   border-right: 1px solid #ccc;
 }
 
-/* line 19, ../sass/site.scss */
+/* line 21, ../sass/site.scss */
 .tborder {
   border-top: 1px solid #ccc;
 }
 
-/* line 20, ../sass/site.scss */
+/* line 22, ../sass/site.scss */
 .bborder {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 21, ../sass/site.scss */
+/* line 23, ../sass/site.scss */
 .fborder {
   border: 1px solid #ccc;
 }
 
-/* line 23, ../sass/site.scss */
+/* line 25, ../sass/site.scss */
 #featured {
   margin-top: 40px;
 }
 
-/* line 27, ../sass/site.scss */
+/* line 29, ../sass/site.scss */
 #feat1 {
   height: 450px;
 }
 
-/* line 28, ../sass/site.scss */
+/* line 30, ../sass/site.scss */
 #feat2 {
   height: 300px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 599px) {
-  /* line 31, ../sass/site.scss */
+  /* line 33, ../sass/site.scss */
   #logo {
     height: 90px;
     width: 100%;
@@ -8905,7 +8910,7 @@ button.close {
   }
 }
 
-/* line 39, ../sass/site.scss */
+/* line 41, ../sass/site.scss */
 #header_ad {
   height: 90px;
   width: 728px;
@@ -8913,18 +8918,45 @@ button.close {
   float: right;
 }
 
-/* line 46, ../sass/site.scss */
+/* line 48, ../sass/site.scss */
+#sidebar-toggle {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+/* line 52, ../sass/site.scss */
+#sidebar-toggle .row {
+  display: table;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* line 60, ../sass/site.scss */
+[class*="col-"] {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 66, ../sass/site.scss */
+.s-togl {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 71, ../sass/site.scss */
 .blog-masthead {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 52, ../sass/site.scss */
+/* line 77, ../sass/site.scss */
 .spacer {
   height: 75px;
 }
 
-/* line 55, ../sass/site.scss */
+/* line 80, ../sass/site.scss */
 .spacer45 {
   height: 45px;
 }

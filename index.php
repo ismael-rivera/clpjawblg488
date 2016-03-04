@@ -1,5 +1,5 @@
 <?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header' ) ); ?>
-<div data-role="content">
+
     <?php $args = array( 'posts_per_page' => 4, 'category_name' => 'featured' );
           $i = 0; $feat = array(); $postslist = get_posts( $args );
           foreach ( $postslist as $post ) : setup_postdata( $post ); 
@@ -8,15 +8,18 @@
 
     <div class="spacer"></div> 
 
-    <div id="cap-ads-section" class="container fborder">
+    <div id="sidebar-toggle" class="container">
       <div class="row">
-          <div class="col-xs-1 fborder">H</div>
-          <div class="col-xs-10 fborder">E</div>
-          <div class="col-xs-1 fborder">L</div>
+        <div class="col-xs-3 red s-togl">
+          <button type="button">Left</button>  
+        </div>          
+        <div class="col-xs-6 red s-togl">SIDEBAR TOGGLES</div>
+        <div class="col-xs-3 red s-togl">
+          <button type="button">Left</button>  
+        </div> 
       </div>
     </div>
 
-    <div class="spacer"></div> 
     <div id="content-section" class="container fborder">
         <div class="row">
               <div id="content" class="col-sm-8 rborder">
@@ -45,11 +48,11 @@ foreach($custom_posts as $post) : setup_postdata($post);?>
 
     <div class="spacer"></div> 
 
-    <div id="ads" class="container">
+    <!-- <div id="ads" class="container">
       <div class="col-sm-4 fborder">ads</div>
       <div class="col-sm-4 fborder">ads</div>
       <div class="col-sm-4 fborder">ads</div>
-    </div>
+    </div> -->
 
     <div class="spacer"></div> 
 </div>

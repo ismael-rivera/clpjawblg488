@@ -12,7 +12,9 @@ body {
     // -o-background-size: cover;
 }
 
+$red:#BA0303;
 
+.red{background-color:$red;}
 
 .lborder{border-left: 1px solid #ccc;}
 .rborder{border-right: 1px solid #ccc;}
@@ -41,6 +43,29 @@ body {
   width:728px;
   display: block;
   float: right;
+}
+
+#sidebar-toggle{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  .row{
+    display: table; 
+    width:100%; 
+    margin-left: 0px; 
+    margin-right: 0px;
+  }
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.s-togl{
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .blog-masthead {
