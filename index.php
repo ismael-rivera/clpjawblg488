@@ -1,10 +1,12 @@
 <?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header' ) ); ?>
-
-    <?php $args = array( 'posts_per_page' => 4, 'category_name' => 'featured' );
-          $i = 0; $feat = array(); $postslist = get_posts( $args );
-          foreach ( $postslist as $post ) : setup_postdata( $post ); 
-                  $postid[$i] = get_the_ID(); $i++; endforeach; 
-          wp_reset_postdata(); ?>
+    <?php get_template_part('thegrid'); ?>
+    <?php 
+    // $args = array( 'posts_per_page' => 4, 'category_name' => 'featured' );
+    //       $i = 0; $feat = array(); $postslist = get_posts( $args );
+    //       foreach ( $postslist as $post ) : setup_postdata( $post ); 
+    //               $postid[$i] = get_the_ID(); $i++; endforeach; 
+    //       wp_reset_postdata(); 
+    ?>
 
     <div class="spacer"></div> 
 
@@ -33,7 +35,8 @@ foreach($custom_posts as $post) : setup_postdata($post);?>
                   <div id="article_pic" class="col-sm-4"></div>
                   <div id="article_link" class="col-sm-8 lborder">
                     <h2><a class="article_link_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <p class="excerpt">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <p class="excerpt"><?php the_excerpt(); ?>
+</p>
                   </div>
                 </div>
 <!-- article-web-component END -->
