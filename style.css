@@ -21,8 +21,13 @@ CONTENTS:
 /* ---------------------------------------------------------------------------------------------------------- 
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-/*@import "assets/css/libs/bootstrap.css";*/
+@import "assets/css/libs/normalize.css";
+@import "assets/css/libs/bootstrap.css";
+@import "assets/css/isotope.css";
 @import "assets/css/site.css";
+@import "assets/css/fonts.css";
+
+
 
 
 div,

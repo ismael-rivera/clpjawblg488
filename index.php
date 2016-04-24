@@ -1,5 +1,4 @@
 <?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header' ) ); ?>
-    <?php get_template_part('thegrid'); ?>
     <?php 
     // $args = array( 'posts_per_page' => 4, 'category_name' => 'featured' );
     //       $i = 0; $feat = array(); $postslist = get_posts( $args );
@@ -24,28 +23,13 @@
 
     <div id="content-section" class="container fborder">
         <div class="row">
-              <div id="content" class="col-sm-8 rborder">
+              <div id="content" class="col-sm-12 rborder">
+<?php get_template_part('thegrid'); ?>
 
-<?php global $post; // required
-//$args = array('category' => -9); // exclude category 9
-$custom_posts = get_posts();
-foreach($custom_posts as $post) : setup_postdata($post);?>
-<!-- article-web-component BEGIN -->
-                <div class="row">
-                  <div id="article_pic" class="col-sm-4"></div>
-                  <div id="article_link" class="col-sm-8 lborder">
-                    <h2><a class="article_link_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <p class="excerpt"><?php the_excerpt(); ?>
-</p>
-                  </div>
-                </div>
-<!-- article-web-component END -->
-<?php endforeach; ?>
+
                 
 
-              </div>
-              <div id="sidebar" class="col-sm-4">
-              </div>
+            </div>
         </div> 
     </div>
 
