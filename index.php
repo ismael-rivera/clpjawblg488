@@ -9,7 +9,7 @@
 
     <div class="spacer"></div> 
 
-    <div id="sidebar-toggle" class="container">
+    <!-- <div id="sidebar-toggle" class="container">
       <div class="row">
         <div class="col-xs-3 red s-togl">
           <button type="button">Left</button>  
@@ -19,17 +19,13 @@
           <button type="button">Left</button>  
         </div> 
       </div>
-    </div>
+    </div> -->
 
     <div id="content-section" class="container fborder">
         <div class="row">
               <div id="content" class="col-sm-12 rborder">
-<?php get_template_part('thegrid'); ?>
-
-
-                
-
-            </div>
+                  <?php get_template_part('content'); ?>   
+              </div>
         </div> 
     </div>
 
