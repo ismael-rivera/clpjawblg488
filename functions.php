@@ -159,7 +159,39 @@ add_action( 'init', 'register_my_menus' );
 	function wpdocs_excerpt_more( $more ) {
 	    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
 	        get_permalink( get_the_ID() ),
-	        __( 'Read More', 'textdomain' )
+	        __( '...Read Full Article Here', 'textdomain' )
 	    );
 	}
 	add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+
+/* ========================================================================================================================
+	
+	Register our sidebars and widgetized areas.
+	
+======================================================================================================================== */
+
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home Left Sidebar',
+		'id'            => 'home_left_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Home Right Sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+	

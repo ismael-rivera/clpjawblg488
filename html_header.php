@@ -11,7 +11,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
     <title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
 
     <!-- Bootstrap core CSS -->

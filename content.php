@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-2"><?php get_sidebar(); ?></div>
+    <div class="col-lg-6">
       <div class="grid">
             <!-- article-web-component BEGIN -->
               <!-- Start the Loop. -->
@@ -19,7 +20,7 @@
 
   <!-- Display the Title as a link to the Post's permalink. -->
 
-  <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+  <h2><a class="entry-title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 
   <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
@@ -58,6 +59,7 @@
               <!-- article-web-component END -->
       </div>
     </div>
+    <div class="col-lg-4"<?php get_sidebar(); ?></div>
   </div>
 </div>
 

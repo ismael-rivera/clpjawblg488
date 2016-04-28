@@ -21,9 +21,9 @@
       </div>
     </div> -->
 
-    <div id="content-section" class="container fborder">
+    <div id="content-section" class="container">
         <div class="row">
-              <div id="content" class="col-sm-12 rborder">
+              <div id="content" class="col-sm-12">
                   <?php get_template_part('content'); ?>   
               </div>
         </div> 

@@ -12,17 +12,19 @@
         </div>
     </div> -->
 
-    <div id="header" class="container">
+    <div id="header" class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
-          <h1><a id="logo" class="blog-nav-item active" href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-          </div>
-          <div class="col-sm-8">
-          <a class="blog-nav-item active" href="http://getbootstrap.com/examples/blog/#">Home</a>
-          <a class="blog-nav-item" href="http://getbootstrap.com/examples/blog/#">New features</a>
-          <a class="blog-nav-item" href="http://getbootstrap.com/examples/blog/#">Press</a>
-          <a class="blog-nav-item" href="http://getbootstrap.com/examples/blog/#">New hires</a>
-          <a class="blog-nav-item" href="http://getbootstrap.com/examples/blog/#">About</a>
+          <div class="col-lg-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h1><a id="logo" class="blog-nav-item active" href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                </div>
+                <div class="col-sm-8">
+                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                </div>
+              </div>  
+            </div>    
           </div>
         </div>
     </div>

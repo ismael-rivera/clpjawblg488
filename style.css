@@ -23,24 +23,15 @@ CONTENTS:
 ---------------------------------------------------------------------------------------------------------- */
 @import "assets/css/libs/normalize.css";
 @import "assets/css/libs/bootstrap.css";
+@import "assets/fonts/fonts.css";
 @import "assets/css/isotope.css";
 @import "assets/css/site.css";
-@import "assets/css/fonts.css";
 
 
 
 
-div,
-article,
-section,
-header,
-footer,
-nav,
-li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
-.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
-body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
-::-moz-selection 	{ background:#ff0; color:#333; }
-::selection 		{ background:#ff0; color:#333; }
+
+
 
 /* ---------------------------------------------------------------------------------------------------------- 
 02 Typography -----------------------------------------------------------------------------------------------
@@ -54,8 +45,8 @@ button,
 input,
 select,
 textarea {
-	color: #1a1a1a;
-	font-family: Merriweather, Georgia, serif;
+	color: #fafafa;
+	font-family: merriweatherregular, Georgia, serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -212,22 +203,24 @@ big {
 	margin-left: 7.6923%;
 }
 
+
+
+.entry-title, h1, h2, h3 {
+	font-family: "Helvetica Neue", sans-serif;
+}
+
 .entry-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
-	font-size: 28px;
-	font-size: 1.75rem;
+	font-size: 24px;
+	/*font-size: 1.75rem;*/
 	font-weight: 700;
 	line-height: 1.25;
 	margin-bottom: 1em;
+	color: #ebebeb;
 }
 
-.entry-title a {
-	color: #1a1a1a;
-}
-
-.entry-title a:hover,
-.entry-title a:focus {
-	color: #007acc;
+.entry-title:hover,
+.entry-title:focus {
+	color: #61C0FF;
 }
 
 .post-thumbnail {
@@ -498,7 +491,7 @@ body:not(.search-results) .entry-summary > :last-child,
 
 .entry-footer {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: 'montserratbold', "Helvetica Neue", sans-serif;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
