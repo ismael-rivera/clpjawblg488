@@ -13,7 +13,17 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php twentysixteen_post_thumbnail(); ?>
+	<?php 
+
+	$reflFunc = new ReflectionFunction('twentysixteen_post_thumbnail');
+print $reflFunc->getFileName() . ':' . $reflFunc->getStartLine();
+
+	twentysixteen_post_thumbnail(); 
+
+
+
+	?>
+
 
 	<div class="entry-content">
 		<?php

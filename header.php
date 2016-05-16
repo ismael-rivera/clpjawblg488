@@ -17,11 +17,14 @@
           <div class="col-lg-12">
             <div class="container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <h1><a id="logo" class="blog-nav-item active" href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-7">
                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                </div>
+                <div class="col-sm-3">
+                  <div id="social-top"></div>
                 </div>
               </div>  
             </div>    

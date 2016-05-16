@@ -32,15 +32,7 @@ $red:#BA0303;
 #feat2{height:300px}
 // #feat3{height:450px}
 // #feat4{height:450px}
-#logo{
-  font-family: montserratregular, "Helvetica Neue", sans-serif;
-  font-size: 28px;
-  @include screen(0px, 599px) {
-    height:90px;
-    width:100%;
-    font-size:25px;
-  } 
-}
+
 
 #header_ad{
   height:90px;
@@ -92,20 +84,43 @@ $red:#BA0303;
   //text-align: center;
   margin-left: 10px;
 }
+
 #header, #footer, #subfooter{
   background-color: #171B1F;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+#logo{
+  font-family: montserratregular, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  border: 1px solid #fff;
+  height:40px;
+  width:180px;
+  display: block;
+  @include screen(0px, 599px) {
+    
+  } 
+}
 #menu-main-menu{
-  float: right;
-  li{
-    a{padding: 50px 20px 10px; border: 1px solid #fff;}
+  float: left;
+  margin-top: 18px;
+  li{ padding: 0px; margin: 0px -2px;
+    a{
+      padding: 40px 20px 22px; 
+      background-color: rgb(57,66,77);
+      color: #fff;   
+    }
+    a:hover{
+      background-color: #EA6936;
+      text-decoration: none;
+      //border: 1px solid rgb(148,7,0); 
+    }
     display: inline-block;
   }
+  @include screen(0px, 599px) {
+    display: none;  } 
 }
-
+#social-top{height: 40px; border: 1px solid #fff;}
 
 
 

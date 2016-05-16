@@ -12,30 +12,29 @@
  */
 
 get_header(); ?>
-
+<div class="spacer"></div> 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+		
+<div id="page-section" class="container">
+        <div class="row">
+              <div id="content" class="col-sm-10">
+			 <?php the_post(); ?>
+<article>
+<header>
+<?php echo "<h1>" . get_the_title() . "</h1>"; ?>
+</header>
+<?php the_content();?>
+</article>
+</div>
+<div id="content" class="col-sm-2"></div>
 
-			// Include the page content template.
-			// get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}
-
-			// End of the loop.
-		endwhile;
-		?>
-
+</div>
 	</main><!-- .site-main -->
 
 	<?php get_sidebar( 'content-bottom' ); ?>
 
 </div><!-- .content-area -->
-
+<div class="spacer"></div> 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -1,6 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-2"><?php get_sidebar(); ?></div>
+    <div class="col-lg-2">
+        <?php if ( is_active_sidebar( 'home_left_1' ) ) : ?>
+  <div id="navigation-sidebar" class="navigation-sidebar widget-area" role="complementary">
+    <?php dynamic_sidebar( 'home_left_1' ); ?>
+  </div><!-- #primary-sidebar -->
+<?php endif; ?>
+    </div>
     <div class="col-lg-6">
       <div class="grid">
             <!-- article-web-component BEGIN -->
