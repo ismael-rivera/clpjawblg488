@@ -176,47 +176,77 @@ html, body {
   padding-bottom: 20px;
 }
 
-/* line 93, ../sass/site.scss */
-#logo {
+/* line 94, ../sass/site.scss */
+#logo, #menu-main-menu {
   font-family: montserratregular, "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  border: 1px solid #fff;
-  height: 40px;
-  width: 180px;
-  display: block;
 }
 
-/* line 104, ../sass/site.scss */
+/* line 98, ../sass/site.scss */
+#logo {
+  background: url("../img/logo.svg") no-repeat center center;
+  background-size: 145px 45px;
+  font-size: 18px;
+  border: 1px solid #cecece;
+  height: 53px;
+  width: 164px;
+  display: block;
+  text-indent: -9999px;
+}
+
+/* line 111, ../sass/site.scss */
+#logo-icon {
+  display: none;
+}
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  /* line 111, ../sass/site.scss */
+  #logo-icon {
+    background: url("../img/logo_icon.svg") no-repeat center center;
+    border: none;
+    background-size: 87px 87px;
+    height: 87px;
+    width: 87px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 123, ../sass/site.scss */
 #menu-main-menu {
   float: left;
   margin-top: 18px;
 }
-/* line 107, ../sass/site.scss */
+/* line 126, ../sass/site.scss */
 #menu-main-menu li {
   padding: 0px;
   margin: 0px -2px;
   display: inline-block;
 }
-/* line 108, ../sass/site.scss */
+/* line 127, ../sass/site.scss */
 #menu-main-menu li a {
   padding: 40px 20px 22px;
-  background-color: #39424d;
+  background-color: #171b1f;
   color: #fff;
 }
-/* line 113, ../sass/site.scss */
+/* line 132, ../sass/site.scss */
 #menu-main-menu li a:hover {
-  background-color: #EA6936;
+  background-color: #c26114;
   text-decoration: none;
 }
 @media screen and (min-width: 0px) and (max-width: 599px) {
-  /* line 104, ../sass/site.scss */
+  /* line 123, ../sass/site.scss */
   #menu-main-menu {
     display: none;
   }
 }
 
-/* line 123, ../sass/site.scss */
+/* line 143, ../sass/site.scss */
 #social-top {
   height: 40px;
   border: 1px solid #fff;
+}
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  /* line 143, ../sass/site.scss */
+  #social-top {
+    display: none;
+  }
 }

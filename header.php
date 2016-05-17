@@ -1,4 +1,4 @@
-<?php require_once("html_header.php") ?>
+
 
   <body <?php body_class(); ?> data-pinterest-extension-installed="cr1.39.1">
   
@@ -11,7 +11,11 @@
           <div class="col-sm-4"><?php get_search_form(); ?></div>
         </div>
     </div> -->
-
+    <div id="mobi-header" class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12"></div>
+      </div>    
+    </div>
     <div id="header" class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
