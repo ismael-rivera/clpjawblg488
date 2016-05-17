@@ -8,7 +8,7 @@ html, body {
     // -moz-background-size: cover;
     // background-size: cover;
     // -o-background-size: cover;
-  background-color:#39424D;
+  
 }
 
 $red:#BA0303;
@@ -84,17 +84,59 @@ $red:#BA0303;
   //text-align: center;
   margin-left: 10px;
 }
+
 $blue-black: #16242B;
-$soft-hue-black: #171B1F;
+$soft-hue-black: #1f242a;
+$hover-orange: rgb(194,97,20);
+$bg-gray: #39424D;          
 
 #header, #footer, #subfooter{
-  background-color: $blue-black;
+  background-color: $soft-hue-black;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#logo, #menu-main-menu{
+#logo, #menu-main-menu, #navigation-sidebar{
   font-family: montserratregular, "Helvetica Neue", sans-serif;
+}
+
+#featured-bar{
+  height: 500px;
+  background-color: $bg-gray;
+}
+
+#featured-bar-single{
+  height: 200px;
+  background-color: $bg-gray;
+}
+
+#navigation-sidebar li, #navigation-sidebar h2{
+  padding-bottom: 10px;
+}
+
+#navigation-sidebar h2{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.square-add, .big-square-add{
+  border: 1px solid #cecece;
+  margin: 10px;
+}
+
+.big-square-add{
+  height: 240px;
+  width: 330px;
+}
+.square-add{
+  height: 100px;
+  width: 155px;
+  display: block;
+}
+
+.post h2 a.entry-title {
+  color: rgb(194,97,20);
+  text-decoration: none;
 }
 
 #logo{
@@ -104,6 +146,8 @@ $soft-hue-black: #171B1F;
   border: 1px solid #cecece;
   height:53px;
   width:164px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-indent: -9999px;
   @include screen(0px, 599px) {
@@ -128,7 +172,7 @@ $soft-hue-black: #171B1F;
   li{ padding: 0px; margin: 0px -2px;
     a{
       padding: 40px 20px 22px; 
-      background-color: rgb(23,27,31);
+      background-color: $soft-hue-black;
       color: #fff;   
     }
     a:hover{

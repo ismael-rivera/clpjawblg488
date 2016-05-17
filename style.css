@@ -45,7 +45,7 @@ button,
 input,
 select,
 textarea {
-	color: #fafafa;
+	color: #1F242A;
 	font-family: merriweatherregular, Georgia, serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -219,7 +219,9 @@ big {
 }
 
 .entry-title:hover,
-.entry-title:focus {
+.entry-title:focus,
+.post h2 a.entry-title:hover,
+.post h2 a.entry-title:focus {
 	color: #61C0FF;
 }
 

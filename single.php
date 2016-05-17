@@ -1,4 +1,4 @@
-<?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header-post' ) ); ?>
 <?php
 /**
 * @package WordPress

@@ -31,7 +31,7 @@ class rc_color_my_posts {
 			/* Color by post Status */
 			.status-draft { background: #ffffe0 !important;}
 			.status-future { background: #E9F2D3 !important;}
-			.status-publish {}
+			.status-publish {background: #97DD00 !important;}
 			.status-pending { background: #D3E4ED !important;}
 			.status-private { background: #FFECE6 !important;}
 			.post-password-required { background: #ff9894 !important;}

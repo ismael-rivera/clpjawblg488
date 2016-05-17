@@ -1,4 +1,3 @@
-<div class="container-fluid">
   <div class="row">
     <div class="col-lg-2">
         <?php if ( is_active_sidebar( 'home_left_1' ) ) : ?>
@@ -65,8 +64,28 @@
               <!-- article-web-component END -->
       </div>
     </div>
-    <div class="col-lg-4"<?php get_sidebar(); ?></div>
-  </div>
-</div>
+    <div class="col-lg-4">
+      <div class="row">
+          <div class="col-sm-12 big-square-add">HELLO WORJEHWWJSIK</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12 big-square-add">HELLO WORJEHWWJSIK</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6 square-add">HELLO</div>
+          <div class="col-sm-6 square-add">WORJEHWWJSIK</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6 square-add">HELLO</div>
+          <div class="col-sm-6 square-add">WORJEHWWJSIK</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12"><?php get_sidebar(); ?></div>
+      </div>     
+    </div>
+  </div><!-- end row -->
+ 
+
+
 
  
