@@ -1,3 +1,4 @@
+<?php Starkers_Utilities::get_template_parts( array( 'html_header', 'header-post' ) ); ?>
 <?php
 /**
  * The template for displaying pages
@@ -11,7 +12,7 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+?>
 <div class="spacer"></div> 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
@@ -37,4 +38,4 @@ get_header(); ?>
 </div><!-- .content-area -->
 <div class="spacer"></div> 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'footer','html_footer') ); ?>

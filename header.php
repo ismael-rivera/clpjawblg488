@@ -35,9 +35,25 @@
           </div>
         </div>
     </div>
+    <div id="newscat-bar" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container">
+            <div id="newscat-rss" class="col-lg-1">kjh</div>
+            <div id="newscat-menu" class="col-lg-11"><?php wp_nav_menu( array( 'theme_location' => 'newscat-menu' ) ); ?></div>
+          </div>
+        </div>  
+      </div>    
+    </div>
     <div id="featured-bar" class="container-fluid">
       <div class="row">
-          <div class="col-lg-12"></div>
+        <div class="col-lg-12">
+          <div class="container">
+            <div id="abfeat" class="col-lg-2 fborder">kjh</div>
+            <div id="abfeat" class="col-lg-6 fborder">kjh</div>
+            <div id="abfeatlist" class="col-lg-4 fborder">euogiyg</div>
+          </div>
+        </div>  
       </div>    
     </div>
           

@@ -10,8 +10,12 @@ html, body {
     // -o-background-size: cover;
   
 }
-
+$blue-black: #16242B;
+$soft-hue-black: #1f242a;
+$hover-orange: rgb(194,97,20);
+$bg-gray: #39424D;      
 $red:#BA0303;
+$link-green: #6DBB51;
 
 .red{background-color:$red;}
 
@@ -28,10 +32,23 @@ $red:#BA0303;
   }
 }
 
-#feat1{height:450px}
-#feat2{height:300px}
-// #feat3{height:450px}
-// #feat4{height:450px}
+#abfeat{height:350px;}
+#abfeatlist{height:350px;}
+// #feat3{height:450px;}
+// #feat4{height:450px;}
+
+#adfeat1{height: 200px;}
+#adfeat2{height: 200px;}
+
+#featured-bar{
+  min-height: 350px;
+  background-color: $bg-gray;
+}
+
+#featured-bar-single{
+  min-height: 200px;
+  background-color: $red;
+}
 
 
 #header_ad{
@@ -84,11 +101,7 @@ $red:#BA0303;
   //text-align: center;
   margin-left: 10px;
 }
-
-$blue-black: #16242B;
-$soft-hue-black: #1f242a;
-$hover-orange: rgb(194,97,20);
-$bg-gray: #39424D;          
+    
 
 #header, #footer, #subfooter{
   background-color: $soft-hue-black;
@@ -100,15 +113,7 @@ $bg-gray: #39424D;
   font-family: montserratregular, "Helvetica Neue", sans-serif;
 }
 
-#featured-bar{
-  height: 500px;
-  background-color: $bg-gray;
-}
 
-#featured-bar-single{
-  height: 200px;
-  background-color: $bg-gray;
-}
 
 #navigation-sidebar li, #navigation-sidebar h2{
   padding-bottom: 10px;
@@ -126,11 +131,11 @@ $bg-gray: #39424D;
 
 .big-square-add{
   height: 240px;
-  width: 330px;
+  width: 340px;
 }
 .square-add{
   height: 100px;
-  width: 155px;
+  width: 165px;
   display: block;
 }
 
@@ -166,6 +171,35 @@ $bg-gray: #39424D;
     margin-right: auto;
   } 
 }
+
+
+
+
+
+
+#newscat-bar{background-color: $red; height: auto;}
+#newscat-menu{
+  float: left;
+  ul{ position: relative;
+      padding: 0px;
+      font-size: 0;
+
+  li{ padding: 0px; 
+      margin: 0px;
+      display: inline-block;
+      position: relative;
+    a{  
+        padding: 6px 20px;
+        margin: 0px; 
+        background-color: $red;
+        color: #fff;
+        display: block;
+        font-size: 14px;   
+      }
+   }
+   } 
+}
+
 #menu-main-menu{
   float: left;
   margin-top: 18px;
