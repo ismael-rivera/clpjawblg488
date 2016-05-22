@@ -1,4 +1,5 @@
-  <div class="col-lg-8">
+  <div class="col-lg-2 vertical-ad"></div>
+  <div class="col-lg-6">
       <div class="grid">
             <!-- article-web-component BEGIN -->
               <!-- Start the Loop. -->
@@ -56,20 +57,20 @@
               <!-- article-web-component END -->
       </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 sidebar-right">
       <div class="row">
-          <div class="col-sm-12 big-square-add">HELLO WORJEHWWJSIK</div>
+          <div class="col-sm-12 big-square-ad">Big Ad 1</div>
       </div>
       <div class="row">
-          <div class="col-sm-12 big-square-add">HELLO WORJEHWWJSIK</div>
+          <div class="col-sm-12 big-square-ad">Big Ad 2</div>
       </div>
       <div class="row">
-          <div class="col-sm-6 square-add">HELLO</div>
-          <div class="col-sm-6 square-add">WORJEHWWJSIK</div>
+          <div class="col-sm-6 square-ad">HELLO</div>
+          <div class="col-sm-6 square-ad">WORJEHWWJSIK</div>
       </div>
       <div class="row">
-          <div class="col-sm-6 square-add">HELLO</div>
-          <div class="col-sm-6 square-add">WORJEHWWJSIK</div>
+          <div class="col-sm-6 square-ad">HELLO</div>
+          <div class="col-sm-6 square-ad">WORJEHWWJSIK</div>
       </div>
       <div class="row">
           <div class="col-sm-12"><?php get_sidebar(); ?></div>

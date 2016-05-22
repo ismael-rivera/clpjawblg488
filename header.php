@@ -49,9 +49,27 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="container">
-            <div id="abfeat" class="col-lg-2 fborder">kjh</div>
-            <div id="abfeat" class="col-lg-6 fborder">kjh</div>
-            <div id="abfeatlist" class="col-lg-4 fborder">euogiyg</div>
+            <div id="abfeat" class="col-lg-2 fborder">Ad</div>
+            <div id="abfeat" class="col-lg-6 fborder">
+              <!-- YouTube -->
+             
+              <?php $cat_id = get_cat_id('Featured'); ?>
+
+              <?php if ( have_posts() ) { 
+                      while ( have_posts() ) { 
+                        the_post(); 
+                        if ( in_category($cat_id) ){ 
+                            $attachments = get_attached_media( 'image');
+                            foreach($attachments as $attachment) { echo('There are attachments alright'); }
+                        }
+                      }
+              }?>
+             
+               
+
+                                 </div>
+            <div id="abfeatlist" class="col-lg-2 fborder">Select</div>
+            <div id="abfeatlist" class="col-lg-2 fborder">Ad</div>
           </div>
         </div>  
       </div>    

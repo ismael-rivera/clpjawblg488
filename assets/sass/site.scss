@@ -124,19 +124,33 @@ $link-green: #6DBB51;
   margin-top: 20px;
 }
 
-.square-add, .big-square-add{
+.square-ad, .big-square-ad, .vertical-ad{
   border: 1px solid #cecece;
   margin: 10px;
 }
 
-.big-square-add{
+.vertical-ad{
+  height: 540px;
+  width: 140px;
+}
+
+.sidebar-right{
+  
+.big-square-ad{
   height: 240px;
   width: 340px;
+  float: right;
 }
-.square-add{
+.square-ad{
+  float: right;
   height: 100px;
   width: 165px;
   display: block;
+}
+}
+
+h1.blog-post-title{
+  font-size: 36px;
 }
 
 .post h2 a.entry-title {
