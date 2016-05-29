@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="container">
-            <div id="newscat-rss" class="col-lg-1">kjh</div>
+            <div id="newscat-rss" class="col-lg-1"></div>
             <div id="newscat-menu" class="col-lg-11"><?php wp_nav_menu( array( 'theme_location' => 'newscat-menu' ) ); ?></div>
           </div>
         </div>  
@@ -52,8 +52,7 @@
             <div id="abfeat" class="col-lg-2 fborder">Ad</div>
             <div id="abfeat" class="col-lg-6 fborder">
               <!-- YouTube -->
-             
-              <?php $cat_id = get_cat_id('Featured'); ?>
+              <?php $cat_id = get_cat_id('Featured'); echo $cat_id;?>
 
               <?php if ( have_posts() ) { 
                       while ( have_posts() ) { 
@@ -64,10 +63,7 @@
                         }
                       }
               }?>
-             
-               
-
-                                 </div>
+             </div>
             <div id="abfeatlist" class="col-lg-2 fborder">Select</div>
             <div id="abfeatlist" class="col-lg-2 fborder">Ad</div>
           </div>

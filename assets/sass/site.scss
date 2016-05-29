@@ -42,6 +42,8 @@ $link-green: #6DBB51;
 
 #featured-bar{
   min-height: 350px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: $bg-gray;
 }
 
@@ -102,18 +104,27 @@ $link-green: #6DBB51;
   margin-left: 10px;
 }
     
+.cleanpad{
+  padding: 0px;
+}
 
-#header, #footer, #subfooter{
+#header, #footer, #subfooter, #footer-fluid{
   background-color: $soft-hue-black;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+#footer{
+  padding-top: 60px;
+  color: #fff;
+  .link-column li{
+    padding-bottom: 10px;
+  }
+}
+
 #logo, #menu-main-menu, #navigation-sidebar{
   font-family: montserratregular, "Helvetica Neue", sans-serif;
 }
-
-
 
 #navigation-sidebar li, #navigation-sidebar h2{
   padding-bottom: 10px;
@@ -126,28 +137,39 @@ $link-green: #6DBB51;
 
 .square-ad, .big-square-ad, .vertical-ad{
   border: 1px solid #cecece;
-  margin: 10px;
+  margin-bottom: 15px;
 }
 
 .vertical-ad{
   height: 540px;
-  width: 140px;
+  width: 170px;
+}
+.sidebar-left{
+  float: left;
+}
+
+.square-ad{
+    height: 100px;
+    width: 165px;
+    display: block;
+    margin: 5px;    
 }
 
 .sidebar-right{
-  
-.big-square-ad{
-  height: 240px;
-  width: 340px;
   float: right;
+
+  .big-square-ad{
+    height: 240px;
+    width: 350px;
+    float: right;
+  }
+
+  .square-ad{
+    float: right;
+  }
+
 }
-.square-ad{
-  float: right;
-  height: 100px;
-  width: 165px;
-  display: block;
-}
-}
+
 
 h1.blog-post-title{
   font-size: 36px;
@@ -188,10 +210,8 @@ h1.blog-post-title{
 
 
 
-
-
-
 #newscat-bar{background-color: $red; height: auto;}
+
 #newscat-menu{
   float: left;
   ul{ position: relative;
@@ -208,7 +228,8 @@ h1.blog-post-title{
         background-color: $red;
         color: #fff;
         display: block;
-        font-size: 14px;   
+        font-size: 14px; 
+        font-weight: 400;  
       }
    }
    } 

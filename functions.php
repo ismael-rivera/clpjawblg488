@@ -100,8 +100,6 @@
         wp_enqueue_style( 'screen' );
 
         
-
-
 	}
 
 
@@ -190,6 +188,42 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Home Right Sidebar',
 		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'Footer_L1',
+		'id'            => 'footer_l1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Footer_L2',
+		'id'            => 'footer_l2',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Footer_R1',
+		'id'            => 'footer_r1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Footer_R2',
+		'id'            => 'footer_r2',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
