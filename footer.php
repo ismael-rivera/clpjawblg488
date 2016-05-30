@@ -30,6 +30,8 @@
               <li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
             </ul>
           </div>
           <div id="column2" class="link-column col-sm-2">
@@ -38,6 +40,8 @@
            		<li><a href="#">link</a></li>
            		<li><a href="#">link</a></li>
            		<li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
            	</ul>
@@ -50,6 +54,8 @@
           		<li><a href="#">link</a></li>
           		<li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
           	</ul>
           </div>
           <div id="column4" class="link-column col-sm-2">
@@ -59,6 +65,8 @@
           		<li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
           		<li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
               <li><a href="#">link</a></li>
           	</ul>
           </div>

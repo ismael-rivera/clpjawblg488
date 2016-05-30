@@ -28,6 +28,7 @@
 	======================================================================================================================== */
 
 	add_theme_support('post-thumbnails');
+	add_image_size( 'featured', 540, 350 ); // 570 pixels wide by 350 pixels tall, soft proportional crop mode
 	
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
@@ -193,7 +194,7 @@ function arphabet_widgets_init() {
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => 'Footer_L1',
 		'id'            => 'footer_l1',

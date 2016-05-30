@@ -50,19 +50,17 @@
         <div class="col-lg-12">
           <div class="container">
             <div id="abfeat" class="col-lg-2 fborder">Ad</div>
-            <div id="abfeat" class="col-lg-6 fborder">
-              <!-- YouTube -->
-              <?php $cat_id = get_cat_id('Featured'); echo $cat_id;?>
-
+            <div id="abfeat" class="col-lg-6">
+              <?php $cat_id = get_cat_id('Featured'); ?>
               <?php if ( have_posts() ) { 
                       while ( have_posts() ) { 
                         the_post(); 
-                        if ( in_category($cat_id) ){ 
-                            $attachments = get_attached_media( 'image');
-                            foreach($attachments as $attachment) { echo('There are attachments alright'); }
-                        }
+                          if ( in_category($cat_id) ){
+                            the_post_thumbnail('featured');
+                          }
                       }
-              }?>
+                    }
+              ?>
              </div>
             <div id="abfeatlist" class="col-lg-2 fborder">Select</div>
             <div id="abfeatlist" class="col-lg-2 fborder">Ad</div>
