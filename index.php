@@ -75,43 +75,8 @@
 								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
 							</header>
 							 -->
-							<section class="grid">
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/blue-angels.jpg" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Blue Angels</a>
-								</div>
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/Russian-nuclear-fission-engine.jpg" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Russia Has a Nuclear Fission Engine</a>
-								</div>
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Blue Angels</a>
-								</div>
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Blue Angels</a>
-								</div>
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/pic08.jpg" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Russia Has a Nuclear Fission Engine</a>
-								</div>
-								<div class="grid-item">
-									<a class="item-image" href="index.html">
-									   <img src="images/blue-angels.jpg" alt="" />
-									</a>
-									<a class="item-title-link" href="index.html">Blue Angels</a>
-								</div>			
+							<section id="postDiv" class="grid">
+											
 							</section>
 						</div>
 					</div>
@@ -143,6 +108,7 @@
 		<!-- Scripts -->
 
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/ajax.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/masonry.pkgd.min.js"></script>
@@ -152,7 +118,7 @@
 			 
 			<script src="assets/js/main.js"></script>
 			<script>
-						$('.grid').masonry({
+						$('#postDiv').masonry({
 						  // options
 						  itemSelector: '.grid-item',
 						  columnWidth: 200
