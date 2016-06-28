@@ -35,7 +35,7 @@
           </div>
         </div>
     </div>
-    <div id="featured-bar-single" class="container-fluid">
+    <!-- <div id="featured-bar-single" class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <div class="container">
@@ -44,7 +44,7 @@
           </div>
         </div>  
       </div>     
-    </div>
+    </div> -->
           
 
 

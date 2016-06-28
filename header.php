@@ -45,13 +45,13 @@
         </div>  
       </div>    
     </div>
-    <div id="featured-bar" class="container-fluid">
+    <!-- <div id="featured-bar" class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <div class="container">
             <div id="abfeat" class="col-lg-2 fborder">Ad</div>
             <div id="abfeat" class="col-lg-6">
-              <?php $cat_id = get_cat_id('Featured'); ?>
+              <?php /*$cat_id = get_cat_id('Featured'); ?>
               <?php if ( have_posts() ) { 
                       while ( have_posts() ) { 
                         the_post(); 
@@ -59,7 +59,7 @@
                             the_post_thumbnail('featured');
                           }
                       }
-                    }
+                    }*/
               ?>
              </div>
             <div id="abfeatlist" class="col-lg-2 fborder">Select</div>
@@ -67,7 +67,7 @@
           </div>
         </div>  
       </div>    
-    </div>
+    </div> -->
           
 
 

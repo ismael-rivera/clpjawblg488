@@ -24,25 +24,25 @@
           </div>
         	<div id="column1" class="link-column col-sm-2">
             <ul>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
+              <li><a href="http://futurism.com/">Futurism.Com</a></li>
+              <li><a href="https://news.vice.com/">Vice News</a></li>
+              <li><a href="http://www.reuters.tv/">Reuters.Tv</a></li>
+              <li><a href="http://www.liveleak.com/">liveleak.com</a></li>
+              <li><a href="http://www.wired.com/">Wired.Com/</a></li>
+              <li><a href="http://www.alternet.org/">alternet.org</a></li>
+              <li><a href="http://www.renewableenergyworld.com">Renewable Energy</a></li>
+              <li><a href="http://www.extremetech.com/">link</a></li>
             </ul>
           </div>
           <div id="column2" class="link-column col-sm-2">
            	<ul>
-           		<li><a href="#">link</a></li>
-           		<li><a href="#">link</a></li>
-           		<li><a href="#">link</a></li>
-           		<li><a href="#">link</a></li>
+           		<li><a href="http://www.theverge.com">The Verge</a></li>
+           		<li><a href="http://screenrant.com/">screenrant</a></li>
+           		<li><a href="http://www.nytimes.com">NY Times</a></li>
+           		<li><a href="https://www.washingtonpost.com/">link</a></li>
+              <li><a href="http://thenextweb.com/">Reddit</a></li>
               <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
+              <li><a href="#">        </a></li>
               <li><a href="#">link</a></li>
            	</ul>
           </div>

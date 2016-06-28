@@ -17,6 +17,8 @@ $bg-gray: #39424D;
 $red:#BA0303;
 $link-green: #6DBB51;
 
+$link-orange: rgb(194,97,20);
+
 .red{background-color:$red;}
 
 .lborder{border-left: 1px solid #ccc;}
@@ -262,7 +264,36 @@ h1.blog-post-title{
   } 
 }
 
+.blog-post-title{
+  color: rgb(194,97,20);
+  padding-top: 20px;
+}
 
+.blog-post-subheader{
+  color: #737373;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.single-title-row{
+  border-bottom: 1px solid $bg-gray;
+  margin-bottom: 60px;
+}
+
+input#submit.submit{
+  background-color: $link-orange;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.single-post-ad{
+  border: 1px solid #cecece;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 750px;
+  height: 100px;
+}
 
 
 

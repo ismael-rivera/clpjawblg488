@@ -26,7 +26,12 @@
               <div id="content" class="col-sm-12">
                   <?php get_template_part('content'); ?>   
               </div>
-        </div> 
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8"><div class="single-post-ad"></div></div>
+            <div class="col-lg-2"></div>
+        </div>  
     </div>
 
     <div class="spacer"></div> 
