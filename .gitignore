@@ -4,15 +4,17 @@ node_modules/
 wordpress/
 xtras/
 .sass-cache/
-config.rb
-Gruntfile.js
-README.txt
 assets/sass/basefiles/
+articles/
+wp/
+fonts/
+test/
 
 # Files #
 #######################
 config.rb
 Gruntfile.js
+README.txt
 
 # Compiled source #
 ###################
