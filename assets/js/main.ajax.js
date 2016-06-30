@@ -19,19 +19,30 @@ function getPostsFromAjax(){
 
 	function htmlOut(tit, lnk, img){
 
-	    htmlout =  '<div class="grid-item">';
+	    htmlout =  '<article class="grid-item">';
 		htmlout += '<a class="item-image" href="'+lnk+'">';
 		htmlout += '<img src="'+img+'" alt="" />';
 		htmlout += '</a>';
 		htmlout += '<a class="item-title-link" href="index.html">'+tit+'</a>';
-		htmlout += '</div>';
+		htmlout += '</article>';
 
+	
+	test2 = '<li style="width: 10%; height: 20px;" class="voyelle"  data-foo="5">A</li>';
+	test2 += '<li style="width: 10%; height: 40px;" class="consonne" data-foo="6">B</li>';
+	test2 += '<li style="width: 10%; height: 40px;" class="consonne" data-foo="3">C</li>';
+	test2 += '<li style="width: 10%; height: 20px;" class="consonne" data-foo="2">D</li>';
+	test2 += '<li style="width: 10%; height: 60px;" class="voyelle"  data-foo="4">E</li>';
+	test2 += '<li style="width: 10%; height: 60px;" class="consonne" data-foo="1">F</li>';
+	test2 += '<li style="width: 10%; height: 20px;" class="consonne" data-foo="7">G</li>';
+	
+
+		test = '<article class="myredbox">'+tit+'</article>';
 		//------------------------------------------------------------------	
   		//BREAKPOINT 2: TEST HTML OUTPUT 
   		//console.log(htmlout);	
   		//------------------------------------------------------------------
-		
-		return htmlout;
+
+		$('#dylay').append(test2);
 	}	
 	
 
@@ -56,8 +67,8 @@ function getPostsFromAjax(){
 	  	     //console.log(data[i].title);
 	  	     //------------------------------------------------------------------
 	  	     
-
-	  	     $('#postDiv').append(htmlOut(data[i].title, data[i].href, data[i].image));
+             htmlOut(data[i].title, data[i].href, data[i].image)
+	  	     
 	  	  }
 	  });
 

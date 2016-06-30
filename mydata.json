@@ -1,14 +1,15 @@
 {
-	"p1": {
-		"title": "Checkout this Blue Angels 360 degree view from Cockpit",
-		"href": "ad.html",
-		"image": "images/blue-angels.jpg"
-	},
-	"p2": {
-		"title": "Suck my Cock, you Wanker",
-		"href": "ad2.html",
-		"image": "images/pic05.jpg"
-	}
+	"posts": [
+		{	
+			"title": "Checkout this Blue Angels 360 degree view from Cockpit",
+			"href": "ad.html",
+			"image": "images/blue-angels.jpg"
+		},
+		{
+			"title": "Suck my Cock, you Wanker",
+			"href": "ad2.html",
+			"image": "images/pic05.jpg"
+		}
 
-
+	]
 }

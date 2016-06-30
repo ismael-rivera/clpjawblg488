@@ -1,129 +1,215 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>AwesomeBlogger</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<style>
-			/*body {background-color:#39424D;}*/
-			h1   {color:blue;}
-			p    {color:green;}
-			/*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
-			.item-image{ display:block;}
-			.item-title-link{ clear:both; display:block;}
-			.logo{ ;}
-			.logo-title img{ width: 150px; margin-bottom: 100px; border: 6px solid #39424D; padding: 0.4em 0.5em 0.4em 0.1em; background-color:#39424D;}
-			
+<!DOCTYPE html>
+<html lang="en">
 
-		</style>
-	</head>
-	<body>
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-							<!-- Logo -->
-							<!-- 
-								<a href="index.html" class="logo">
-									<span class="symbol"></span>
-								</a>
- -->
-								<a href="index.html" class="logo-title">
-									<img src="images/logo-opt.svg" alt="Kiwi standing on oval">
-								</a>
-							<!-- Nav -->
-							<!-- 	<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
- -->
-						</div>
-					</header>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-<!-- 
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
-							 -->
-							<section id="postDiv" class="grid">
-											
-							</section>
-						</div>
-					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    <!-- Custom CSS -->
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
 
-			</div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/compile/compiled.libs.js"></script>
+    <script src="assets/js/compile/compiled.js"></script>
+    <style>
+            /*body {background-color:#39424D;}*/
+            /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
+            .item-image{ display:block;}
+            .item-title-link{ clear:both; display:block;}
+            .logo-title img{ 
+                width: 150px; 
+                margin-bottom: 100px; 
+                border: 6px solid #39424D; 
+                padding: 0.4em 0.5em 0.4em 0.1em; 
+                background-color:#39424D;
+            }
+            #dylay { margin: 0; padding: 0; list-style: none; }
+            #dylay li { float: left; margin: 2px; border-radius: 5px; padding: 2px 5px; font-size: 10px; }
+            .myredbox { width:80px; height:80px; background-color: red;}
+    </style>
 
-		<!-- Scripts -->
+</head>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/ajax.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/masonry.pkgd.min.js"></script>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="logo-title">
+                    <img src="images/logo-opt.svg" alt="Kiwi standing on oval">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Section</h1>
+                    
+
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*">all</a></li>
+                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
+                        <li><a href="#" data-filter=".consonne">consonne</a></li>
+                    </ul>
+
+                    <ul id="sorts">
+                        <li><a href="#">text</a></li>
+                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
+                        <li><a href="#" data-sort-way="desc">text desc</a></li>
+                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div id="postDiv" class="col-lg-12">
+
+            <?php   //Get the content of the JSON file using file_get_contents():
+
+                    $str = file_get_contents('mydata.json');
+                    //Now decode the JSON using json_decode():
+
+                    $json = json_decode($str, true); // decode the JSON into an associative array
+                    //You have an associative array containing all the information. To figure out how to access the values you need, you can do the following:
+
+                    echo '<pre>' . print_r($json, true) . '</pre>';
+                    //This will print out the contents of the array in a nice readable format. Then, you access the elements you want, like so:
+
+                    $i = 0;
+                    
+
+                    //Or loop through the array however you wish:
+                    foreach ($json['posts'] as $post) {
+
+                        $title = $json['posts'][$i]['title'];
+                        $href  = $json['posts'][$i]['href'];
+                        $image = $json['posts'][$i]['image'];
+
+                    ?>    
+
+                        <article class="grid-item">
+                        <a class="item-image" href="<?php echo $href ?>">
+                        <img src="<?php echo $image ?>" alt="" />
+                        </a>
+                        <a class="item-title-link" href="index.html"><?php echo $title ?></a>
+                        </article>
+
+                    <?php    
+
+
+                        $i ++;
+
+
+                    foreach ($post as $field => $value) {
+                    // Use $field and $value here
+                        //echo $value . ' - ';
+                    }
+}
+                ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+
+    
  
-			 
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			 
-			<script src="assets/js/main.js"></script>
-			<script>
-						$('#postDiv').masonry({
-						  // options
-						  itemSelector: '.grid-item',
-						  columnWidth: 200
-						});
-			</script>
-			<script src="//localhost:35729/livereload.js"></script>
-	</body>
+    
+
+    <script>
+                        // $('#postDiv').masonry({
+                        //   // options
+                        //   itemSelector: '.grid-item',
+                        //   columnWidth: 200
+                        // });
+    </script>
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+
 </html>
