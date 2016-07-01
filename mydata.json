@@ -3,12 +3,14 @@
 		{	
 			"title": "Checkout this Blue Angels 360 degree view from Cockpit",
 			"href": "ad.html",
-			"image": "images/blue-angels.jpg"
+			"image": "images/blue-angels.jpg",
+			"categories": ["aviation"]
 		},
 		{
 			"title": "Suck my Cock, you Wanker",
 			"href": "ad2.html",
-			"image": "images/pic05.jpg"
+			"image": "images/pic05.jpg",
+			"categories": ["stupidity"]
 		}
 
 	]

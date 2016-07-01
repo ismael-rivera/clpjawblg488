@@ -25,8 +25,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<!--     
     <script src="assets/js/compile/compiled.libs.js"></script>
     <script src="assets/js/compile/compiled.js"></script>
+ -->
     <style>
             /*body {background-color:#39424D;}*/
             /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
@@ -34,7 +37,6 @@
             .item-title-link{ clear:both; display:block;}
             .logo-title img{ 
                 width: 150px; 
-                margin-bottom: 100px; 
                 border: 6px solid #39424D; 
                 padding: 0.4em 0.5em 0.4em 0.1em; 
                 background-color:#39424D;
@@ -88,45 +90,21 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <div id="about" class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>About Section</h1>
-                    
-
-                    <ul id="filters">
-                        <li><a href="#" data-filter="*">all</a></li>
-                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
-                        <li><a href="#" data-filter=".consonne">consonne</a></li>
-                    </ul>
-
-                    <ul id="sorts">
-                        <li><a href="#">text</a></li>
-                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
-                        <li><a href="#" data-sort-way="desc">text desc</a></li>
-                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div id="postDiv" class="col-lg-12">
-
-            <?php   //Get the content of the JSON file using file_get_contents():
+                    <ul id="dylay">
+    <article style="width: 10%; height: 20px;" class="voyelle"  data-foo="5">A</article>
+    <article style="width: 10%; height: 40px;" class="consonne" data-foo="6">B</article>
+    <article style="width: 10%; height: 40px;" class="consonne" data-foo="3">C</article>
+    <article style="width: 10%; height: 20px;" class="consonne" data-foo="2">D</article>
+    <article style="width: 10%; height: 60px;" class="voyelle"  data-foo="4">E</article>
+    <article style="width: 10%; height: 60px;" class="consonne" data-foo="1">F</article>
+    <article style="width: 10%; height: 20px;" class="consonne" data-foo="7">G</article>
+    <?php   //Get the content of the JSON file using file_get_contents():
 
                     $str = file_get_contents('mydata.json');
                     //Now decode the JSON using json_decode():
@@ -134,7 +112,7 @@
                     $json = json_decode($str, true); // decode the JSON into an associative array
                     //You have an associative array containing all the information. To figure out how to access the values you need, you can do the following:
 
-                    echo '<pre>' . print_r($json, true) . '</pre>';
+                    //echo '<pre>' . print_r($json, true) . '</pre>';
                     //This will print out the contents of the array in a nice readable format. Then, you access the elements you want, like so:
 
                     $i = 0;
@@ -156,23 +134,34 @@
                         <a class="item-title-link" href="index.html"><?php echo $title ?></a>
                         </article>
 
-                    <?php    
-
-
-                        $i ++;
-
-
-                    foreach ($post as $field => $value) {
-                    // Use $field and $value here
-                        //echo $value . ' - ';
+                    <?php  $i ++;  
                     }
-}
-                ?>
+            ?>
+</ul>
+
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*">all</a></li>
+                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
+                        <li><a href="#" data-filter=".consonne">consonne</a></li>
+                    </ul>
+
+                    <ul id="sorts">
+                        <li><a href="#">text</a></li>
+                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
+                        <li><a href="#" data-sort-way="desc">text desc</a></li>
+                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div id="postDiv" class="col-lg-12">
+
+
 
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
@@ -209,6 +198,13 @@
                         //   columnWidth: 200
                         // });
     </script>
+
+    <script src="assets/js/libs/jquery.js"></script>
+    <script src="assets/js/libs/jquery.easing.js"></script>
+    <script src="assets/js/libs/dylay.js"></script>
+    <script src="assets/js/main.dylay.js"></script>
+    <script src="assets/js/main.js"></script>
+
     <script src="//localhost:35729/livereload.js"></script>
 </body>
 

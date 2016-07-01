@@ -3,11 +3,11 @@ var $dylay = jQuery('#dylay');
 // init
 $dylay.dylay({
 // speed of animation
-	speed: 1500,
+	speed: 350,
 // make your animation yummy
-	easing: 'easeOutElastic',
+	//easing: 'easeOutElastic',
 // selector to define elements
-	selector: '>li'
+	selector: '>article'
 });
 
 // controls
