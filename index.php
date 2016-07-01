@@ -116,6 +116,15 @@
     <section id="about" class="about-section">
         <div class="container">        
             <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+                        <div class="overlay">
+                           <h2>Hover effect 1v2</h2>
+                           <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-12">
                     <h1>Content Section</h1>
                     <div id="dylay">
@@ -149,11 +158,15 @@
 
                     ?>    
 
-                        <article class="grid-item">
-                        <a class="item-image" href="<?php echo $href ?>">
-                        <img src="<?php echo $image ?>" alt="" />
-                        </a>
-                        <a class="item-title-link" href="index.html"><?php echo $title ?></a>
+                        <article class="grid-item hovereffect">
+                            <a class="item-image" href="<?php echo $href ?>">
+                                <img src="<?php echo $image ?>" alt="" />
+                            </a>
+                            <div class="overlay">
+                           <h2>Hover effect 1v2</h2>
+                           <a class="item-title-link" href="index.html"><?php echo $title ?></a>
+                            </div>
+                            
                         </article>
 
                     <?php  $i ++;  

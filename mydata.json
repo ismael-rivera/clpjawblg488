@@ -7,25 +7,25 @@
 			"image": "images/blue-angels.jpg",
 			"categories": ["aviation"],
 			"tags": ["awesome" , "360-degree-view", "vr-goggles"],
-			"status": "draft"
+			"status": "7-7"
 		},
 		{   
 			"id": "2",
 			"title": "What Tilda Swinton’s Role as the Ancient One in 'Doctor Strange' Means to a Tibetan",
 			"href": "http://bit.ly/29c45vS",
 			"image": "images/doctor_strange_poster.jpg",
-			"categories": ["movies, marvel"],
-			"tags": ["animal-cruelty"],
-			"status": "draft"
+			"categories": ["movies"],
+			"tags": ["animal-cruelty", "marvel"],
+			"status": "7-7"
 		},
 		{   
 			"id": "3",
 			"title": "4 Types Of People Movies Hate For Some Reason",
 			"href": "http://bit.ly/29z354p",
 			"image": "images/4-Types-Of-People-Movies-Hate-For-Some-Reason.jpg",
-			"categories": ["stupidity"],
-			"tags": ["animal-cruelty"],
-			"status": "draft"
+			"categories": ["stupidity", "movies"],
+			"tags": ["fun", "witty"],
+			"status": "7-7"
 		},
 		{	
 			"id": "4",
@@ -38,12 +38,12 @@
 		},
 		{	
 			"id": "5",
-			"title": "Suck my Cock, you Wanker",
-			"href": "ad2.html",
-			"image": "images/pic05.jpg",
+			"title": "Gorilla Fight Omaha Zoo",
+			"href": "http://bit.ly/29cdwM8",
+			"image": "images/gorilla_fight.jpg",
 			"categories": ["stupidity"],
 			"tags": ["animal-cruelty"],
-			"status": "draft"
+			"status": "5-7"
 		},
 		{   
 			"id": "6",
