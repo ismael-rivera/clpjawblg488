@@ -1,3 +1,4 @@
+<?php include('functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +54,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -72,13 +73,13 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                        <a class="page-scroll" href="#page-top">Disclaimers</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">News</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -91,19 +92,40 @@
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <div id="category-select">
         <div class="container">
             <div class="row">
+                <div class="col-lg-6">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*">all</a></li>
+                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
+                        <li><a href="#" data-filter=".consonne">consonne</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul id="sorts">
+                        <li><a href="#">text</a></li>
+                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
+                        <li><a href="#" data-sort-way="desc">text desc</a></li>
+                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <section id="about" class="about-section">
+        <div class="container">        
+            <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
-                    <ul id="dylay">
-    <article style="width: 10%; height: 20px;" class="voyelle"  data-foo="5">A</article>
-    <article style="width: 10%; height: 40px;" class="consonne" data-foo="6">B</article>
-    <article style="width: 10%; height: 40px;" class="consonne" data-foo="3">C</article>
-    <article style="width: 10%; height: 20px;" class="consonne" data-foo="2">D</article>
-    <article style="width: 10%; height: 60px;" class="voyelle"  data-foo="4">E</article>
-    <article style="width: 10%; height: 60px;" class="consonne" data-foo="1">F</article>
-    <article style="width: 10%; height: 20px;" class="consonne" data-foo="7">G</article>
+                    <h1>Content Section</h1>
+                    <div id="dylay">
+                        <article style="width: 10%; height: 20px;" class="voyelle"  data-foo="5">A</article>
+                        <article style="width: 10%; height: 40px;" class="consonne" data-foo="6">B</article>
+                        <article style="width: 10%; height: 40px;" class="consonne" data-foo="3">C</article>
+                        <article style="width: 10%; height: 20px;" class="consonne" data-foo="2">D</article>
+                        <article style="width: 10%; height: 60px;" class="voyelle"  data-foo="4">E</article>
+                        <article style="width: 10%; height: 60px;" class="consonne" data-foo="1">F</article>
+                        <article style="width: 10%; height: 20px;" class="consonne" data-foo="7">G</article>
     <?php   //Get the content of the JSON file using file_get_contents():
 
                     $str = file_get_contents('mydata.json');
@@ -137,67 +159,111 @@
                     <?php  $i ++;  
                     }
             ?>
-</ul>
+</div>
 
-                    <ul id="filters">
-                        <li><a href="#" data-filter="*">all</a></li>
-                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
-                        <li><a href="#" data-filter=".consonne">consonne</a></li>
-                    </ul>
-
-                    <ul id="sorts">
-                        <li><a href="#">text</a></li>
-                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
-                        <li><a href="#" data-sort-way="desc">text desc</a></li>
-                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div id="postDiv" class="col-lg-12">
-
-
-
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                </div>
-            </div>
+    <div id="footer-fluid" class="container-fluid">
+<div id="footer" class="container">
+  <div class="row">
+    <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-12">
+              <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+          </div>
         </div>
-    </section>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-6 square-ad">HELLO</div>
+              <div class="col-sm-6 square-ad">WORJEHWWJSIK</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 square-ad">HELLO</div>
+              <div class="col-sm-6 square-ad">WORJEHWWJSIK</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 square-ad">HELLO</div>
+              <div class="col-sm-6 square-ad">WORJEHWWJSIK</div>
+            </div>
+          </div>
+            <div id="column1" class="link-column col-sm-2">
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+          <div id="column2" class="link-column col-sm-2">
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+          <div id="column3" class="link-column col-sm-2">
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+          <div id="column4" class="link-column col-sm-2">
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-    <!-- jQuery -->
+<div id="subfooter" class="container-fluid">
+  <div class="spacer"></div> 
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4"><p class="text-muted">© 2015 Company, Inc.</p></div>
+            <div class="col-sm-4">ads</div>
+            <div class="col-sm-4">ads</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>     
 
     
- 
-    
 
-    <script>
-                        // $('#postDiv').masonry({
-                        //   // options
-                        //   itemSelector: '.grid-item',
-                        //   columnWidth: 200
-                        // });
-    </script>
 
     <script src="assets/js/libs/jquery.js"></script>
     <script src="assets/js/libs/jquery.easing.js"></script>

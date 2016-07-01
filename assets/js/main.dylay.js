@@ -17,6 +17,9 @@ jQuery('#filters a').on('click', function () {
 })
 
 jQuery('#sorts a').on('click', function () {
-	$dylay.dylay('sort', jQuery(this).data('sort-by'), jQuery(this).data('sort-way'));	
+	$dylay.dylay('sort', 
+		          jQuery(this).data('sort-by'), 
+		          jQuery(this).data('sort-way')
+		          );	
 	return false;
 })
