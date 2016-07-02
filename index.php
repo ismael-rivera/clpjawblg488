@@ -13,12 +13,12 @@
     <title>Scrolling Nav - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
+
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-
+    
 
     <!-- Custom CSS -->
-    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,7 +34,6 @@
     <style>
             /*body {background-color:#39424D;}*/
             /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
-            .item-image{ display:block;}
             .item-title-link{ clear:both; display:block;}
             .logo-title img{ 
                 width: 150px; 
@@ -116,25 +115,8 @@
     <section id="about" class="about-section">
         <div class="container">        
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                        <div class="overlay">
-                           <h2>Hover effect 1v2</h2>
-                           <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <h1>Content Section</h1>
-                    <div id="dylay">
-                        <article style="width: 10%; height: 20px;" class="voyelle"  data-foo="5">A</article>
-                        <article style="width: 10%; height: 40px;" class="consonne" data-foo="6">B</article>
-                        <article style="width: 10%; height: 40px;" class="consonne" data-foo="3">C</article>
-                        <article style="width: 10%; height: 20px;" class="consonne" data-foo="2">D</article>
-                        <article style="width: 10%; height: 60px;" class="voyelle"  data-foo="4">E</article>
-                        <article style="width: 10%; height: 60px;" class="consonne" data-foo="1">F</article>
-                        <article style="width: 10%; height: 20px;" class="consonne" data-foo="7">G</article>
+                
+                    
     <?php   //Get the content of the JSON file using file_get_contents():
 
                     $str = file_get_contents('mydata.json');
@@ -157,22 +139,16 @@
                         $image = $json['posts'][$i]['image'];
 
                     ?>    
-
-                        <article class="grid-item hovereffect">
+<div class="col-lg-3">
+                        <article class="grid-item">
                             <a class="item-image" href="<?php echo $href ?>">
-                                <img src="<?php echo $image ?>" alt="" />
-                            </a>
-                            <div class="overlay">
-                           <h2>Hover effect 1v2</h2>
-                           <a class="item-title-link" href="index.html"><?php echo $title ?></a>
-                            </div>
-                            
+                                <img class="img-responsive" src="<?php echo $image ?>" alt="" />
+                                <h4 class="item-title-link"><?php echo $title ?></h4>
+                            </a>           
                         </article>
-
-                    <?php  $i ++;  
-                    }
-            ?>
 </div>
+                    <?php  $i ++;  } ?>
+
 
                     
                 </div>
@@ -181,7 +157,7 @@
     </section>
 
 
-    <div id="footer-fluid" class="container-fluid">
+   <!--  <div id="footer-fluid" class="container-fluid">
 <div id="footer" class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -273,7 +249,7 @@
       </div>
     </div>
   </div>
-</div>     
+</div>      -->
 
     
 
