@@ -97,8 +97,8 @@
                 <div class="col-lg-6">
                     <ul id="filters">
                         <li><a href="#" data-filter="*">all</a></li>
-                        <li><a href="#" data-filter=".voyelle">voyelle</a></li>
-                        <li><a href="#" data-filter=".consonne">consonne</a></li>
+                        <li><a href="#" data-filter=".aviation">aviation</a></li>
+                        <li><a href="#" data-filter=".wildlife">wildlife</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -117,7 +117,7 @@
             <div class="row">
                 
                     
-    <?php   //Get the content of the JSON file using file_get_contents():
+            <?php   //Get the content of the JSON file using file_get_contents():
 
                     $str = file_get_contents('mydata.json');
                     //Now decode the JSON using json_decode():
@@ -137,21 +137,26 @@
                         $title = $json['posts'][$i]['title'];
                         $href  = $json['posts'][$i]['href'];
                         $image = $json['posts'][$i]['image'];
+                        $catgrs = $json['posts'][$i]['categories'];
+
+foreach($catgrs as $catgr){ 
+  echo $catgr;
+}
 
                     ?>    
-<div class="col-lg-3">
-                        <article class="grid-item">
+                    <div id="dylay" class="col-lg-3">
+                        <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
                                 <img class="img-responsive" src="<?php echo $image ?>" alt="" />
                                 <h4 class="item-title-link"><?php echo $title ?></h4>
                             </a>           
                         </article>
-</div>
+                    </div>
                     <?php  $i ++;  } ?>
 
 
                     
-                </div>
+                
             </div>
         </div>
     </section>
