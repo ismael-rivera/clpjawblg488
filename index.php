@@ -144,8 +144,8 @@ foreach($catgrs as $catgr){
 }
 
                     ?>    
-                    <div id="dylay" class="col-lg-3">
-                        <article class="grid-item <?php echo $catgr ?>">
+                    <div class="col-lg-3">
+                        <article id="dylay" class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
                                 <img class="img-responsive" src="<?php echo $image ?>" alt="" />
                                 <h4 class="item-title-link"><?php echo $title ?></h4>
