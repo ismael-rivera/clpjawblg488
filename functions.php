@@ -14,7 +14,6 @@ function getAds(){
 
                     $i = 0;
                     
-
                     //Or loop through the array however you wish:
                     foreach ($json['posts'] as $post) {
 

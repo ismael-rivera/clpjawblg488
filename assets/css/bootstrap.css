@@ -3986,7 +3986,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 22px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4358,8 +4358,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 .navbar-form {
@@ -4492,7 +4492,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #39424D;
-  border-top: 5px solid #32404B;
+  border-top: 5px solid #FEDE27;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4511,7 +4511,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333;
-  background-color: transparent;
+  background-color: #FEDE27;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

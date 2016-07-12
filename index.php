@@ -91,27 +91,25 @@
     </nav>
 
     <!-- About Section -->
-    <div id="category-select">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul id="filters">
-                        <li><a href="#" data-filter="*">all</a></li>
-                        <li><a href="#" data-filter=".aviation">aviation</a></li>
-                        <li><a href="#" data-filter=".wildlife">wildlife</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul id="sorts">
-                        <li><a href="#">text</a></li>
-                        <li><a href="#" data-sort-by="foo">data-foo</a></li>
-                        <li><a href="#" data-sort-way="desc">text desc</a></li>
-                        <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
-                    </ul>
-                </div>
+    <!-- <div id="category-select" class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul id="filters">
+                    <li><a href="#" data-filter="*">all</a></li>
+                    <li><a href="#" data-filter=".aviation">aviation</a></li>
+                    <li><a href="#" data-filter=".wildlife">wildlife</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-12">
+                <ul id="sorts">
+                    <li><a href="#">text</a></li>
+                    <li><a href="#" data-sort-by="foo">data-foo</a></li>
+                    <li><a href="#" data-sort-way="desc">text desc</a></li>
+                    <li><a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a></li>
+                </ul>
             </div>
         </div>
-    </div>        
+    </div> -->        
     <section id="about" class="about-section">
         <div class="container">        
             <div class="row">
@@ -140,12 +138,12 @@
                         $catgrs = $json['posts'][$i]['categories'];
 
 foreach($catgrs as $catgr){ 
-  echo $catgr;
+  //echo $catgr;
 }
 
                     ?>    
                     <div class="col-lg-3">
-                        <article id="dylay" class="grid-item <?php echo $catgr ?>">
+                        <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
                                 <img class="img-responsive" src="<?php echo $image ?>" alt="" />
                                 <h4 class="item-title-link"><?php echo $title ?></h4>
