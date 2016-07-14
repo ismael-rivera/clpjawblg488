@@ -1,3 +1,6 @@
+<? /*header('Status: 301 Moved Permanently', false, 301);    
+   header('Location: uc/index.php');    
+   exit();*/ ?>
 <?php include('functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +38,7 @@
             /*body {background-color:#39424D;}*/
             /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
             .item-title-link{ clear:both; display:block;}
-            .logo-title img{ 
-                width: 150px; 
-                border: 6px solid #39424D; 
-                padding: 0.4em 0.5em 0.4em 0.1em; 
-                background-color:#39424D;
-            }
+            
             #dylay { margin: 0; padding: 0; list-style: none; }
             #dylay li { float: left; margin: 2px; border-radius: 5px; padding: 2px 5px; font-size: 10px; }
             .myredbox { width:80px; height:80px; background-color: red;}
@@ -277,6 +275,17 @@ foreach($catgrs as $catgr){
     <script src="assets/js/libs/dylay.js"></script>
     <script src="assets/js/main.dylay.js"></script>
     <script src="assets/js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80763354-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
     <script src="//localhost:35729/livereload.js"></script>
 </body>

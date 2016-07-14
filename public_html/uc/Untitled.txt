@@ -1,0 +1,1 @@
+This is the maintenace folder. Drop the entire website in here and take the files inside the under_construction folder and place them in the root directory. You should see now a under construction page in your site index.
