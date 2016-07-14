@@ -110,29 +110,29 @@
 		},
 		{	
 			"id": "13",
-			"title": "4 Types Of People Movies Hate For Some Reason",
-			"href": "ad2.html",
-			"image": "images/pic05.jpg",
-			"categories": ["stupidity"],
-			"tags": ["animal-cruelty"],
+			"title": "Chipmunk caught red handed",
+			"href": "https://www.youtube.com/watch?v=3cR4Uy_P_k4",
+			"image": "images/chubby-chipmunk.jpg",
+			"categories": ["animals"],
+			"tags": ["cute"],
 			"status": "draft"
 		},
 		{
 			"id": "14",
-			"title": "4 Types Of People Movies Hate For Some Reason",
+			"title": "This Reddit Ama With a Professional Porn Cameraman Is Hillarious",
 			"href": "ad2.html",
-			"image": "images/pic05.jpg",
+			"image": "images/porn-photographer.jpg",
 			"categories": ["stupidity"],
 			"tags": ["animal-cruelty"],
 			"status": "draft"
 		},
 		{
 			"id": "15",
-			"title": "4 Types Of People Movies Hate For Some Reason",
-			"href": "ad2.html",
-			"image": "images/pic05.jpg",
-			"categories": ["stupidity"],
-			"tags": ["animal-cruelty"],
+			"title": "People Lie On Their Résumés",
+			"href": "http://bit.ly/29PXxVP",
+			"image": "images/People-Lie-On-Their-Resumes.jpg",
+			"categories": ["stupidity", "life", "business"],
+			"tags": ["animal-cruelty", "job-search", "unemployment"],
 			"status": "draft"
 		}
 

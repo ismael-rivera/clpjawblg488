@@ -7,8 +7,11 @@ xtras/
 assets/sass/basefiles/
 articles/
 wp/
+test/
 fonts/
 test/
+public_html/images/
+public_html/maintenance_folder/
 
 # Files #
 #######################

@@ -110,8 +110,23 @@
             </div>
         </div>
     </div> -->        
-    <section id="about" class="about-section">
-        <div class="container">        
+    <section id="workspace" class="workspace-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Just so you know...:</h3>
+                <p>There used to be a few people working to find this websites direction. Now there is only one. Please be gentle, as I try my best to get
+                   some decent articles up in this mamma jamma. Basically, I'm stuck with all the work now. Yay!! Good news is this website is all mine now
+                   and since I paid for it anyways I might as well run it the way I want without any meetings, memos, emails, or editor whathaveyous. Since this website
+                   is literally brandspanking new and there is probably no one reading this right now (or is there?), I doubt there will be much fuzz about how I run it.
+                   Besides, I am, at this point, of the opinion that artistic vulnerability makes for far better expression than salesmanship in the pursuit of exposure.</p> 
+                <p>Or not. Either way, I could give a shit. I'm doing this.</p>
+              </div>
+              <div class="col-lg-12">
+                <h3>Workspace Station:</h3>
+                <p>This is a wall of things I like, read and use while I am working on my own content.</p>
+              </div>
+            </div>        
             <div class="row">
                 
                     
@@ -126,7 +141,7 @@
                     //echo '<pre>' . print_r($json, true) . '</pre>';
                     //This will print out the contents of the array in a nice readable format. Then, you access the elements you want, like so:
 
-                    $i = 0;
+                    $i = 14;
                     
 
                     //Or loop through the array however you wish:
@@ -150,7 +165,7 @@ foreach($catgrs as $catgr){
                             </a>           
                         </article>
                     </div>
-                    <?php  $i ++;  } ?>
+                    <?php  $i --;  } ?>
 
 
                     
