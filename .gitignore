@@ -7,11 +7,14 @@ xtras/
 assets/sass/basefiles/
 articles/
 wp/
+debug/
 test/
 fonts/
-test/
-public_html/images/
-public_html/maintenance_folder/
+public_html/test/
+public_html/assets/img/
+public_html/uc/
+public_html/fonts/
+public_html/assets/fonts/
 
 # Files #
 #######################

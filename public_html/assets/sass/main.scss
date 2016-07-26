@@ -16,6 +16,7 @@ $hover-orange: rgb(194,97,20);
 $bg-gray: #39424D;      
 $red:#BA0303;
 $link-green: #6DBB51;
+$session-header: #2E2E2E;
 
 .red{background-color:$red;}
 
@@ -56,7 +57,7 @@ $link-green: #6DBB51;
 section{
   padding-top: 10px;
   padding-bottom: 80px;
-  border: 1px solid #cecece;
+  //border: 1px solid #cecece;
 } 
 #filters,#sorts{
  li{ display: inline-block; } 
@@ -204,8 +205,8 @@ h1.blog-post-title{
   background-size: 145px 45px;
   font-size: 18px;
   border: 1px solid #cecece;
-  height:90px;
-  width:200px;
+  height:172px;
+  width:350px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -216,9 +217,8 @@ h1.blog-post-title{
 
 }
 .logo-title img{ 
-                width: 200px;  
+                width:350px;  
                 padding: 0.4em 0.5em 0.4em 0.1em; 
-                background-color:#39424D;
             }
 
 #logo-icon{
@@ -307,10 +307,56 @@ h1.blog-post-title{
   width: inherit;
 }
 
+#menu-catalog-center{text-align: center;}
+.catalog-menu{
+  ul{ 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  li{
+    list-style-type: none;
+    display: inline-block;
+  }
+  a{
+    display: block;
+    color: $bg-gray;
+    padding: 5px 10px 5px 10px;
+  }
+  border-top: 1px dashed #cecece;
+  border-bottom: 1px dashed #cecece;
+}
 
+#top-menu{
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
 
+#session-social{
+  background-color: $session-header;
+  height: 38px;
+}
 
+#top-social{
+  li{
+    display: inline-block;
+  }
+}
+.top-social-icon{
+  //border: 1px solid #fff;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
 
+#twitter-32{
+  background: url("../img/twitter-32.png") no-repeat;
+}
+#rss-32{
+  background: url("../img/rss-32.png") no-repeat;
+}
 
 
 

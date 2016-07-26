@@ -34,11 +34,17 @@
     <script src="assets/js/compile/compiled.libs.js"></script>
     <script src="assets/js/compile/compiled.js"></script>
  -->
+  <script>
+  function imgError(image) {
+      image.onerror = "";
+      image.src = "assets/img/noimage.jpg";
+      return true;
+  }
+</script>
     <style>
             /*body {background-color:#39424D;}*/
             /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
             .item-title-link{ clear:both; display:block;}
-            
             #dylay { margin: 0; padding: 0; list-style: none; }
             #dylay li { float: left; margin: 2px; border-radius: 5px; padding: 2px 5px; font-size: 10px; }
             .myredbox { width:80px; height:80px; background-color: red;}
@@ -51,44 +57,48 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div id="session-social" class="container">
+        <div class="row">
+            <div id="top-social" class="col-lg-4">
+                <!-- <li><a href="index.html" class="menu-link">Facebook</a></li> -->
+                <li><a id="twitter-32" href="index.html" class="top-social-icon"></a></li>
+                <li><a id="rss-32" href="index.html" class="top-social-icon"></a></li>
+                <!-- <li><a id="tumblr-32" href="index.html" class="top-social-icon"></a></li> -->
+                <!-- <li><a href="index.html" class="menu-link">YouTube</a></li> -->
+            </div>
+            <div id="social" class="col-lg-8"></div>
+        </div>
+    </div>
+    <div id="logo-ad" class="container">
+        <div class="row">
+            <div class="col-lg-4">
                 <a href="index.html" class="logo-title">
-                    <img src="images/logo-opt.svg" alt="Kiwi standing on oval">
+                    <img src="assets/img/logobeta.png" alt="Kiwi standing on oval">
                 </a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top">Disclaimers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">News</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <div class="col-lg-8"></div>
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+    <div id="top-menu" class="container">
+        <div class="row">
+            <div id="menu-catalog-center" class="col-lg-12">
+              <ul class="catalog-menu">
+                <li><a href="index.html" class="menu-link">Politics</a></li>
+                <li><a href="index.html" class="menu-link">Climate Change</a></li>
+                <li><a href="index.html" class="menu-link">Music</a></li>
+                <li><a href="index.html" class="menu-link">Money</a></li>
+                <li><a href="index.html" class="menu-link">News</a></li>
+                <li><a href="index.html" class="menu-link">Tech</a></li>
+                <li><a href="index.html" class="menu-link">Science</a></li>
+                <li><a href="index.html" class="menu-link">Conspiracy</a></li>
+                <li><a href="index.html" class="menu-link">Awesome</a></li>
+                <li><a href="index.html" class="menu-link">Arts & Entertainment</a></li>
+              </ul>  
+            </div>
+        </div>
+    </div>
 
-    <!-- About Section -->
+    <!-- Filter Section -->
     <!-- <div id="category-select" class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -108,9 +118,9 @@
             </div>
         </div>
     </div> -->        
-    <section id="workspace" class="workspace-section">
+    <section id="workspace-section" class="workspace">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-lg-12">
                 <h3>Just so you know...:</h3>
                 <p>There used to be a few people working to find this websites direction. Now there is only one. Please be gentle, as I try my best to get
@@ -124,7 +134,7 @@
                 <h3>Workspace Station:</h3>
                 <p>This is a wall of things I like, read and use while I am working on my own content.</p>
               </div>
-            </div>        
+            </div>  -->       
             <div class="row">
                 
                     
@@ -147,6 +157,7 @@
 
                         $title = $json['posts'][$i]['title'];
                         $href  = $json['posts'][$i]['href'];
+                        $alt  = $json['posts'][$i]['alt'];
                         $image = $json['posts'][$i]['image'];
                         $catgrs = $json['posts'][$i]['categories'];
 
@@ -158,7 +169,7 @@ foreach($catgrs as $catgr){
                     <div class="col-lg-3">
                         <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
-                                <img class="img-responsive" src="<?php echo $image ?>" alt="" />
+                                <img class="img-responsive" src="<?php echo $image ?>" alt="" onerror="imgError(this);" />
                                 <h4 class="item-title-link"><?php echo $title ?></h4>
                             </a>           
                         </article>
