@@ -62,12 +62,12 @@
 		},
 		{	
 			"id": "7",
-			"title": "Checkout this Blue Angels 360 degree view from Cockpit",
-			"href": "ad.html",
+			"title": "Amber Heard And Elon Musk Are ‘Hanging Out,’ But Everyone Thinks They’re Dating",
+			"href": "http://www.huffingtonpost.com/entry/amber-heard-elon-musk-hanging-out-dating_us_5792532de4b00c9876cf43cb",
 			"alt": "assets/img/ph-politics.jpg",
-			"image": "assets/img/blue-angels.jpg",
-			"categories": ["aviation"],
-			"tags": ["animal-cruelty"],
+			"image": "assets/img/amber-heard-elon-musk.png",
+			"categories": ["entertainment"],
+			"tags": ["gossip", "hollywood", "amber-heard", "elon-musk", "divorce"],
 			"status": "draft"
 		},
 		{
@@ -102,12 +102,12 @@
 		},
 		{
 			"id": "11",
-			"title": "4 Types Of People Movies Hate For Some Reason",
-			"href": "ad2.html",
+			"title": "How DNA data storage works",
+			"href": "http://www.extremetech.com/extreme/231343-how-dna-data-storage-works-as-scientists-create-the-first-dna-ram",
 			"alt": "assets/img/ph-politics.jpg",
-			"image": "assets/img/pic05.jpg",
-			"categories": ["stupidity"],
-			"tags": ["animal-cruelty"],
+			"image": "assets/img/dna-storage.jpg",
+			"categories": ["science", "technology"],
+			"tags": ["genetics", "storage", "computational", "capacity"],
 			"status": "draft"
 		},
 		{
@@ -149,7 +149,17 @@
 			"categories": ["stupidity", "life", "business"],
 			"tags": ["animal-cruelty", "job-search", "unemployment"],
 			"status": "draft"
-		}
+		},
+		{
+			"id": "16",
+			"title": "Im An Erotic author, I make a living writing smut books",
+			"href": "https://www.reddit.com/r/IAmA/comments/1koi5e/",
+			"alt": "assets/img/ph-politics.jpg",
+			"image": "assets/img/porn-photographer.jpg",
+			"categories": ["stupidity", "life", "business"],
+			"tags": ["animal-cruelty", "job-search", "unemployment"],
+			"status": "draft"
+		},
 
 
 	]

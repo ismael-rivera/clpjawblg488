@@ -17,6 +17,7 @@ $bg-gray: #39424D;
 $red:#BA0303;
 $link-green: #6DBB51;
 $session-header: #2E2E2E;
+$yellow: #FFE600;
 
 .red{background-color:$red;}
 
@@ -321,7 +322,11 @@ h1.blog-post-title{
   a{
     display: block;
     color: $bg-gray;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 14px 5px 14px;
+    font-size: 14px;
+  }
+  a:hover{
+    background-color: $yellow;
   }
   border-top: 1px dashed #cecece;
   border-bottom: 1px dashed #cecece;
@@ -336,7 +341,7 @@ h1.blog-post-title{
 
 #session-social{
   background-color: $session-header;
-  height: 38px;
+  height: 42px;
 }
 
 #top-social{
@@ -358,8 +363,11 @@ h1.blog-post-title{
   background: url("../img/rss-32.png") no-repeat;
 }
 
-
-
+.item-title-link{
+  text-transform: capitalize;
+  padding: 0px 4px;
+  color:#000;
+}
 
 
 

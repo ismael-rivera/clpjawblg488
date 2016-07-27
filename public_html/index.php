@@ -35,12 +35,12 @@
     <script src="assets/js/compile/compiled.js"></script>
  -->
   <script>
-  function imgError(image) {
-      image.onerror = "";
-      image.src = "assets/img/noimage.jpg";
-      return true;
-  }
-</script>
+    function imgError(image) {
+        image.onerror = "";
+        image.src = "assets/img/noimage2.jpg";
+        return true;
+    }
+  </script>
     <style>
             /*body {background-color:#39424D;}*/
             /*.grid-item { border: 1px solid #000; padding: 20px; width: auto; float: left; clear: both;}*/
@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <a href="index.html" class="logo-title">
-                    <img src="assets/img/logobeta.png" alt="Kiwi standing on oval">
+                    <img src="assets/img/logo.png" alt="Kiwi standing on oval">
                 </a>
             </div>
             <div class="col-lg-8"></div>
@@ -149,7 +149,7 @@
                     //echo '<pre>' . print_r($json, true) . '</pre>';
                     //This will print out the contents of the array in a nice readable format. Then, you access the elements you want, like so:
 
-                    $i = 14;
+                    $i = 15;
                     
 
                     //Or loop through the array however you wish:
@@ -169,7 +169,7 @@ foreach($catgrs as $catgr){
                     <div class="col-lg-3">
                         <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
-                                <img class="img-responsive" src="<?php echo $image ?>" alt="" onerror="imgError(this);" />
+                                <img class="img-responsive" src="<?php echo $image ?>" alt="<?php echo $title ?>" onerror="imgError(this);" />
                                 <h4 class="item-title-link"><?php echo $title ?></h4>
                             </a>           
                         </article>
