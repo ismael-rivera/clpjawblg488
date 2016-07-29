@@ -6,7 +6,6 @@ xtras/
 .sass-cache/
 assets/sass/basefiles/
 articles/
-wp/
 debug/
 test/
 fonts/
@@ -15,6 +14,7 @@ public_html/assets/img/
 public_html/uc/
 public_html/fonts/
 public_html/assets/fonts/
+public_html/wp/wp-content/themes/sumsum/assets/img/
 
 # Files #
 #######################

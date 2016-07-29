@@ -1,0 +1,31 @@
+// ---------------------------------------------------------------------------------------------------------------------
+//  
+//  IMAGES BASE PARTIAL
+//  Author: Ismael Rivera
+//  www: http://speggo.com/
+//  twitter: http://twitter.com/speggo
+//  dribbble: http://dribbble.com/speggo
+//
+//  Licensed under a MIT License
+//
+// ---------------------------------------------------------------------------------------------------------------------
+
+//Static Variables
+
+$logo-desk:"logo_160x37_colordot.png";
+$logo-pad:"";
+$logo-mobi:"";
+
+$img-dir:"../../img";
+$pp-img:"../img/prettyPhoto";
+
+//For background images using Spritesheets
+//    EXAMPLE;
+//    @include spritesheet( $img-name, $bg-coords, $w, $h, $img-rep:false, $img-rep-type:"repeat", $img-url:"../../img/spritesheets" )
+@mixin spritesheet($img-file, $bg-coords, $img-rep-type: no-repeat)
+{
+  background: url(#{$img-dir}/#{$img-file}) no-repeat 10px 10px;
+}
+
+
+
