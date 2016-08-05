@@ -50,6 +50,21 @@
 	======================================================================================================================== */
 
 
+	////////////////////////////////////////////////////////////////////
+	// Register the Sidebar(s)
+	////////////////////////////////////////////////////////////////////
+
+	        // Area 1, located at the top of the sidebar.
+			register_sidebar( array(
+				'name' => __( 'Primary Widget Area', 'starkers' ),
+				'id' => 'primary-widget-area',
+				'description' => __( 'The primary widget area', 'starkers' ),
+				'before_widget' => '<li>',
+				'after_widget' => '</li>',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>',
+			) );
+
 
 	/* ========================================================================================================================
 	
@@ -76,6 +91,8 @@
         wp_enqueue_style( 'main' );
         wp_register_style( 'bootstrap', get_stylesheet_directory_uri().'/assets/css/bootstrap.css', '', '', 'screen' );
         wp_enqueue_style( 'bootstrap' );
+        wp_register_style( '125ads', get_stylesheet_directory_uri().'/assets/css/125ads.css', '', '', 'screen' );
+        wp_enqueue_style( '125ads' );
        
 	}	
 
@@ -130,3 +147,10 @@
 	  $content = str_replace(']]>', ']]&gt;', $content);
 	  return $content;
 	}
+
+
+// function autoblank($text) { 
+// 	$out = str_replace('<a', '<a target="_blank"', $text);
+//     return $out;
+// } 
+// add_filter('the_content','autoblank');

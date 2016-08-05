@@ -333,11 +333,12 @@ h1.blog-post-title{
   a{
     display: block;
     color: $bg-gray;
-    padding: 5px 14px 5px 14px;
+    padding: 15px 14px 15px 14px;
     font-size: 18px;
   }
   a:hover{
     background-color: $yellow;
+    text-decoration: none;
   }
   border-top: 1px dashed #cecece;
   border-bottom: 1px dashed #cecece;
@@ -346,8 +347,8 @@ h1.blog-post-title{
 #top-menu{
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
-  padding-top: 10px;
-  margin-bottom: 20px;
+  //padding-top: 10px;
+  //margin-bottom: 20px;
   font-family: 'oswaldregular';
 }
 
@@ -389,12 +390,18 @@ h1.blog-post-title{
 .article {
   position: relative;
   img{ margin-top: 12px; }
-  h2{ font-size: 18px; }
+  h2{ font-size: 24px; }
+}
+
+.pagenavi{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid $container-border;
 }
 
 #idea-bubble{
-  margin-top: 30px;
-  margin-bottom: 40px;
+  //margin-top: 30px;
+  //margin-bottom: 40px;
   padding-bottom: 40px;
 }
 
@@ -411,9 +418,46 @@ h1.blog-post-title{
   border-left: 1px solid $container-border;
   padding-top: 20px;
 }
+.wp-pagenavi{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+h1.td-headline-big{
+  font-size: 128px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 50px; 
+}
 
+h1.td-headline-semi-big{
+  font-size: 96px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 50px; 
+}
 
+.headline-confirms{
+  text-align: center;
+  li{
+    display: inline-block; 
+  }
+  a{
+    display: block;
+    padding: 0px 20px;
+  }
+}
+.headline-confirms-more{
+  text-align: center;
+  li{
+    display: inline-block; 
+  }
+  a{
+    display: block;
+    padding: 0px 100px;
+  }
+}
 
 
 

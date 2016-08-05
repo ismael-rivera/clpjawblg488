@@ -14,70 +14,38 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'global/html-header', 'global/header' ) ); ?>
-
-<!-- **************************************************************************************** -->
-
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <h3>Workspace Station:</h3>
-                <p>This is a wall of things I like, read and use while I am working on my own content.</p>
-              </div>
+<div id="front-page" class="container">
+    `       <div class="row header-row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <a href=""><h1 class="td-headline-semi-big">Once Again Trump Gets Caught</h1></a>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+</div>
+<div id="idea-bubble" class="container">
+            <div class="row header-row">
+                <div class="col-lg-12">
+                    <ul class="headline-confirms-more">
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="row header-row">
-                <div class="col-lg-6"> 
-                    <h2>Latest Posts</h2> 
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <ul class="headline-confirms">
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                        <li><a href=""><h5>What We've Seen, So Far</h5></a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-6"></div>
-            </div>    
-
-            <div class="row">
-                <div class="col-lg-8 equal_height padding-combo-1">
-                    <?php if ( have_posts() ): ?>
-     <?php while ( have_posts() ) : the_post(); ?>  
-                    <div class="article row">
-                        <div class="col-lg-4 equal_height-2">
-                            <?php  // check if the post has a Post Thumbnail assigned to it.
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail();
-                                } ?>
-                        </div>
-                        <div class="col-lg-8 equal_height-2">
-                            <h2><a href="<?php esc_url( the_permalink() ); ?>"
-                                   title="Permalink to <?php the_title(); ?>" 
-                                   rel="bookmark"><?php the_title(); ?>
-                                </a></h2>
-                            <?php echo excerpt(30); ?>
-                         </div> 
-                    </div>    
-    <?php endwhile; ?>
-    <?php else: ?>
-    <h2>No posts to display</h2>
-    <?php endif; ?>
-                </div> 
-                <div class="col-lg-4 side-right equal_height padding-combo-1">hgfhgfEsse molestie consequat vel illum dolore eu feugiat nulla facilisis at vero eros et? Veniam quis nostrud exerci tation ullamcorper suscipit lobortis, nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim duis autem vel eum iriure. Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut.
-
-Et accumsan et iusto odio dignissim qui blandit praesent? Feugiat nulla facilisis at vero eros luptatum zzril delenit augue duis dolore te. Imperdiet doming id quod mazim placerat facer possim assum typi non habent.
-
-Imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est usus. Lectores legere me lius quod ii; legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem. Iis qui facit eorum claritatem Investigationes demonstraverunt consuetudium lectorum mirum est notare quam littera. Nunc putamus parum claram anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima eodem. Vel illum dolore eu feugiat nulla facilisis at vero eros et? Nam liber tempor cum soluta nobis eleifend option. Ut laoreet dolore magna aliquam erat volutpat ut wisi enim. Qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi congue nihil.
-
-Imperdiet doming id quod mazim placerat facer possim. Magna aliquam erat volutpat ut wisi, enim ad minim veniam. Adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet.
-
-Decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in. Adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore: magna aliquam erat. Quam nunc putamus parum claram anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta. Iriure dolor in hendrerit in vulputate, velit esse molestie! Luptatum zzril delenit augue duis dolore te, feugait nulla facilisi nam? Etiam processus dynamicus qui sequitur mutationem consuetudium lectorum mirum est notare quam. Est usus legentis in iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me! Assum typi non habent claritatem insitam lius quod ii legunt saepius claritas est littera gothica!
-
-Quam littera gothica quam nunc putamus parum claram anteposuerit. Notare litterarum formas humanitatis per seacula quarta decima et.
-</div>     
-            </div> 
-    </div>
-
-<!-- **************************************************************************************** -->
-
-    <div id="idea-bubble" class="container">
-            <div class="row header-row">
-                <div class="col-lg-12"><h3>What I've Been Surfing On</h3></div>
+                <div class="col-lg-1"></div>
             </div>
             <div class="row padding-combo-2">
-                
+                <div class="col-lg-8">
                     
             <?php   //Get the content of the JSON file using file_get_contents():
 
@@ -113,7 +81,7 @@ Quam littera gothica quam nunc putamus parum claram anteposuerit. Notare littera
                     }
 
                     ?>    
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
                                 <img class="img-responsive" src="<?php echo $image ?>" alt="<?php echo $title ?>" onerror="imgError(this);" />
@@ -123,10 +91,70 @@ Quam littera gothica quam nunc putamus parum claram anteposuerit. Notare littera
                     </div>
                     <?php  $i --;  } ?>
 
-
-                    
+                </div>
+                <div class="col-lg-4"></div>    
                 
             </div>
-        </div>
+    </div>
+
+<!-- **************************************************************************************** -->
+
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Workspace Station:</h3>
+                <p>This is a wall of things I like, read and use while I am working on my own content.</p>
+              </div>
+            </div>
+            <div class="row header-row">
+                <div class="col-lg-6"> 
+                    <h2>Latest Posts</h2> 
+                </div>
+                <div class="col-lg-6"></div>
+            </div>    
+
+            <div class="row">
+                <div class="col-lg-8 equal_height padding-combo-1">
+                    <?php if ( have_posts() ): ?>
+                    <?php while ( have_posts() ) : the_post(); ?>  
+                    <div class="article row">
+                        <div class="col-lg-4 equal_height-2">
+                            <?php  // check if the post has a Post Thumbnail assigned to it.
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail();
+                                } ?>
+                        </div>
+                        <div class="col-lg-8 equal_height-2">
+                            <h2><a href="<?php esc_url( the_permalink() ); ?>"
+                                   title="Permalink to <?php the_title(); ?>" 
+                                   rel="bookmark"><?php the_title(); ?>
+                                </a></h2>
+                            <?php echo excerpt(30); ?>
+                         </div> 
+                    </div>    
+                        <?php endwhile; ?>
+                    <!-- End of the main loop -->
+                        <?php else: ?>
+                        <h2>No posts to display</h2>
+                        <?php endif; ?>
+                </div> <!-- End of col-lg-8 -->
+            <div class="col-lg-4 side-right equal_height padding-combo-1">
+                <?php get_sidebar( 'right' ); ?>              
+            </div>     
+            </div>
+
+<!-- Add the pagination functions here. -->
+<div class="pagenavi row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+    <?php wp_pagenavi(); ?>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+
+    </div>
+
+<!-- **************************************************************************************** -->
+
 
 <?php Starkers_Utilities::get_template_parts( array( 'global/footer','global/html-footer') ); ?>    
