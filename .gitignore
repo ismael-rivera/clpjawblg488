@@ -1,23 +1,42 @@
 # Directories #
 #######################
 node_modules/
-wordpress/
 xtras/
 .sass-cache/
-assets/sass/basefiles/
 articles/
 debug/
 test/
 fonts/
 public_html/test/
-public_html/assets/img/
+public_html/assets/
 public_html/uc/
+public_html/uc_page/
 public_html/fonts/
 public_html/assets/fonts/
-public_html/wp/wp-content/themes/sumsum/assets/img/
+public_html/wp-admin/
+public_html/wp-content/themes/awesum/
+public_html/wp-content/themes/vaquero/assets/img/
+public_html/wp-content/themes/vaquero/assets/fonts/
+public_html/wp-content/uploads/
+public_html/wp-content/plugins/
+public_html/wp-includes/
+public_html/PHP-OAuth2-master/
 
 # Files #
 #######################
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+license.txt
 config.rb
 Gruntfile.js
 README.txt
