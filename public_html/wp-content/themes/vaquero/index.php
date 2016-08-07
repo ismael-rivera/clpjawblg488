@@ -81,7 +81,7 @@
                     }
 
                     ?>    
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 padding-combo-1">
                         <article class="grid-item <?php echo $catgr ?>">
                             <a class="item-image" href="<?php echo $href ?>">
                                 <img class="img-responsive" src="<?php echo $image ?>" alt="<?php echo $title ?>" onerror="imgError(this);" />
@@ -92,7 +92,9 @@
                     <?php  $i --;  } ?>
 
                 </div>
-                <div class="col-lg-4"></div>    
+                <div class="col-lg-4 padding-combo-1">
+                    <?php get_sidebar(); ?>
+                </div>    
                 
             </div>
     </div>
@@ -139,7 +141,7 @@
                         <?php endif; ?>
                 </div> <!-- End of col-lg-8 -->
             <div class="col-lg-4 side-right equal_height padding-combo-1">
-                <?php get_sidebar( 'right' ); ?>              
+                              
             </div>     
             </div>
 

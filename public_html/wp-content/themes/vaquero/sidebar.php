@@ -21,6 +21,12 @@
 				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
 			</ul>
 		</div>
+		<div id="cluster-002" class="cluster">
+			<ul id="list-001" class="otf-list">
+				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
+				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
+			</ul>	
+		</div>
 	</li>		
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
