@@ -9,17 +9,57 @@
   text-align: center;
 }
 
-/* line 9, ../sass/125ads.scss */
+/* line 8, ../sass/125ads.scss */
 .otf-item {
   display: inline-block;
-  border: 1px solid #cecece;
   margin-left: 10px;
   margin-top: 10px;
 }
 
-/* line 15, ../sass/125ads.scss */
-.otf-adlink {
+/* line 13, ../sass/125ads.scss */
+.otf-item-wide {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* line 17, ../sass/125ads.scss */
+.otf-large-rectangle {
   display: block;
-  width: 150px;
-  height: 135px;
+  width: 336px;
+  height: 280px;
+  border: 1px solid #cecece;
+}
+
+/* line 23, ../sass/125ads.scss */
+.otf-medium-rectangle {
+  display: block;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #cecece;
+}
+
+/* line 29, ../sass/125ads.scss */
+.otf-rectangle {
+  display: block;
+  width: 180px;
+  height: 150px;
+  border: 1px solid #cecece;
+}
+
+/* line 35, ../sass/125ads.scss */
+.otf-3to1-rectangle {
+  display: block;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #cecece;
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 43, ../sass/125ads.scss */
+.otf-square-button {
+  display: block;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #cecece;
 }

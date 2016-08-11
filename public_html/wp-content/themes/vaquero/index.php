@@ -16,11 +16,11 @@
 <?php Starkers_Utilities::get_template_parts( array( 'global/html-header', 'global/header' ) ); ?>
 <div id="front-page" class="container">
     `       <div class="row header-row">
-                <div class="col-lg-2"></div>
+                <div class="col-lg-2"><a href="" class="otf-rectangle">hfdx</a></div>
                 <div class="col-lg-8">
                     <a href=""><h1 class="td-headline-semi-big">Once Again Trump Gets Caught</h1></a>
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="col-lg-2"><a href="" class="otf-rectangle">jgdf</a></div>
             </div>
 </div>
 <div id="idea-bubble" class="container">
@@ -92,7 +92,7 @@
                     <?php  $i --;  } ?>
 
                 </div>
-                <div class="col-lg-4 padding-combo-1">
+                <div class="ab-sidebar-right col-lg-4 padding-combo-1">
                     <?php get_sidebar(); ?>
                 </div>    
                 
@@ -101,13 +101,40 @@
 
 <!-- **************************************************************************************** -->
 
-        <div class="container">
+        <div id="sponsored" class="container">
             <div class="row">
               <div class="col-lg-12">
-                <h3>Workspace Station:</h3>
-                <p>This is a wall of things I like, read and use while I am working on my own content.</p>
+                <h5>Sponsored Articles</h5>
+                <ul>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                    <li>
+                        <a href="" class="otf-rectangle"></a>
+                        <a href=""><h5>What We've Seen, So Far</h5></a>
+                    </li>
+                </ul>
               </div>
             </div>
+        </div>    
+        <div class="container">   
             <div class="row header-row">
                 <div class="col-lg-6"> 
                     <h2>Latest Posts</h2> 

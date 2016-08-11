@@ -11,20 +11,30 @@
 	<aside>
 		<ul>
 	<li>
-		<div id="cluster-001" class="cluster">
-			<ul id="list-001" class="otf-list">
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
+		<div id="cluster-003" class="cluster">
+			<ul id="adlist-005" class="otf-list">
+				<li class="otf-item-wide"><a href="" class="otf-large-rectangle"></a></li>
 			</ul>	
-			<ul id="list-002" class="otf-list">
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
+		</div>
+		<div id="cluster-001" class="cluster">
+			<ul id="adlist-001" class="otf-list">
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
+			</ul>	
+			<ul id="adlist-002" class="otf-list">
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
+			</ul>
+			<ul id="adlist-003" class="otf-list">
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
+				<li class="otf-item"><a href="" class="otf-square-button"></a></li>
 			</ul>
 		</div>
 		<div id="cluster-002" class="cluster">
-			<ul id="list-001" class="otf-list">
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
-				<li class="otf-item"><a href="" class="otf-adlink"></a></li>
+			<ul id="adlist-005" class="otf-list">
+				<li class="otf-item-wide"><a href="" class="otf-3to1-rectangle"></a></li>
+				<li class="otf-item-wide"><a href="" class="otf-3to1-rectangle"></a></li>
+				<li class="otf-item-wide"><a href="" class="otf-3to1-rectangle"></a></li>
 			</ul>	
 		</div>
 	</li>		

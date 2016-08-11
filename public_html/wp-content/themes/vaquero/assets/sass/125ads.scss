@@ -3,19 +3,48 @@
 }
 .otf-list{
 	display: block;
-	//border: 1px solid #cecece;
 	text-align: center;
 }
 .otf-item{
 	display: inline-block;
-	border: 1px solid #cecece;
 	margin-left: 10px;
 	margin-top: 10px;
 }
-.otf-adlink{
+.otf-item-wide{
+	display: inline-block;
+	margin-top: 10px;
+}
+.otf-large-rectangle{
 	display: block;
-	width: 150px;
-	height: 135px;
+	width: 336px;
+	height: 280px;
+	border: 1px solid #cecece;
+}
+.otf-medium-rectangle{
+	display: block;
+	width: 300px;
+	height: 250px;
+	border: 1px solid #cecece;
+}
+.otf-rectangle{
+	display: block;
+	width: 180px;
+	height: 150px;
+	border: 1px solid #cecece;
+}
+.otf-3to1-rectangle{
+	display: block;
+	width: 300px;
+	height: 100px;
+	border: 1px solid #cecece;
+	float: right;
+	margin-top: 10px;
+}
+.otf-square-button{
+	display: block;
+	width: 125px;
+	height: 125px;
+	border: 1px solid #cecece;
 }
 
 

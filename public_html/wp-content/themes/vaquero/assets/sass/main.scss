@@ -383,10 +383,16 @@ h1.blog-post-title{
   color:#000;
 }
 
-.hori_ad{
+.leaderboard_ad{
+  width: 728px;
   height: 90px;
+  border: 1px solid $container-border;
 }
-
+.button_ad{
+  width: 120px;
+  height: 90px;
+  border: 1px solid $container-border;
+}
 .article {
   position: relative;
   img{ margin-top: 12px; }
@@ -458,8 +464,18 @@ h1.td-headline-semi-big{
     padding: 0px 100px;
   }
 }
-
-
+.ab-sidebar-right{
+  // a{
+  //   float: right;
+  // }
+}
+#sponsored{
+  padding-bottom: 40px;
+  li{
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
 
 
 
