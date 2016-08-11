@@ -24,6 +24,7 @@
             </div>
 </div>
 <div id="idea-bubble" class="container">
+
             <div class="row header-row">
                 <div class="col-lg-12">
                     <ul class="headline-confirms-more">
@@ -44,7 +45,61 @@
                 </div>
                 <div class="col-lg-1"></div>
             </div>
+
+
+            <div class="row header-row">
+                <div class="col-lg-6"> 
+                    <h2>Latest Posts</h2> 
+                </div>
+                <div class="col-lg-6"></div>
+            </div>    
+            <div class="row">
+                <div class="col-lg-8 equal_height padding-combo-1">
+                    <?php if ( have_posts() ): ?>
+                    <?php while ( have_posts() ) : the_post(); ?>  
+                    <div class="article row">
+                        <div class="col-lg-4 equal_height-2">
+                            <?php  // check if the post has a Post Thumbnail assigned to it.
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail();
+                                } ?>
+                        </div>
+                        <div class="col-lg-8 equal_height-2">
+                            <h2><a href="<?php esc_url( the_permalink() ); ?>"
+                                   title="Permalink to <?php the_title(); ?>" 
+                                   rel="bookmark"><?php the_title(); ?>
+                                </a></h2>
+                            <?php echo excerpt(30); ?>
+                         </div> 
+                    </div>    
+                        <?php endwhile; ?>
+                    <!-- End of the main loop -->
+                        <?php else: ?>
+                        <h2>No posts to display</h2>
+                        <?php endif; ?>
+                </div> <!-- End of col-lg-8 -->
+            <div class="col-lg-4 side-right equal_height padding-combo-1">
+                              
+            </div>     
+            </div>
+
+<!-- Add the pagination functions here. -->
+<div class="pagenavi row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+    <?php wp_pagenavi(); ?>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+
+
+
+
+            
             <div class="row padding-combo-2">
+                <div class="ab-sidebar-right col-lg-4 padding-combo-1">
+                    <?php get_sidebar(); ?>
+                </div>
                 <div class="col-lg-8">
                     
             <?php   //Get the content of the JSON file using file_get_contents():
@@ -92,12 +147,10 @@
                     <?php  $i --;  } ?>
 
                 </div>
-                <div class="ab-sidebar-right col-lg-4 padding-combo-1">
-                    <?php get_sidebar(); ?>
-                </div>    
+                    
                 
             </div>
-    </div>
+</div>
 
 <!-- **************************************************************************************** -->
 
@@ -135,42 +188,6 @@
             </div>
         </div>    
         <div class="container">   
-            <div class="row header-row">
-                <div class="col-lg-6"> 
-                    <h2>Latest Posts</h2> 
-                </div>
-                <div class="col-lg-6"></div>
-            </div>    
-
-            <div class="row">
-                <div class="col-lg-8 equal_height padding-combo-1">
-                    <?php if ( have_posts() ): ?>
-                    <?php while ( have_posts() ) : the_post(); ?>  
-                    <div class="article row">
-                        <div class="col-lg-4 equal_height-2">
-                            <?php  // check if the post has a Post Thumbnail assigned to it.
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail();
-                                } ?>
-                        </div>
-                        <div class="col-lg-8 equal_height-2">
-                            <h2><a href="<?php esc_url( the_permalink() ); ?>"
-                                   title="Permalink to <?php the_title(); ?>" 
-                                   rel="bookmark"><?php the_title(); ?>
-                                </a></h2>
-                            <?php echo excerpt(30); ?>
-                         </div> 
-                    </div>    
-                        <?php endwhile; ?>
-                    <!-- End of the main loop -->
-                        <?php else: ?>
-                        <h2>No posts to display</h2>
-                        <?php endif; ?>
-                </div> <!-- End of col-lg-8 -->
-            <div class="col-lg-4 side-right equal_height padding-combo-1">
-                              
-            </div>     
-            </div>
 
 <!-- Add the pagination functions here. -->
 <div class="pagenavi row">
