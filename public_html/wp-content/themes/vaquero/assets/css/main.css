@@ -632,3 +632,8 @@ h1.td-headline-semi-big {
   display: inline-block;
   margin-right: 6px;
 }
+
+/* line 479, ../sass/main.scss */
+#additional-posts {
+  padding-top: 100px;
+}

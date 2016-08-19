@@ -55,6 +55,8 @@
             </div>    
             <div class="row">
                 <div class="col-lg-8 equal_height padding-combo-1">
+                    <div class="row">
+                        <div class="col-lg-12">
                     <?php if ( have_posts() ): ?>
                     <?php while ( have_posts() ) : the_post(); ?>  
                     <div class="article row">
@@ -77,32 +79,11 @@
                         <?php else: ?>
                         <h2>No posts to display</h2>
                         <?php endif; ?>
-                </div> <!-- End of col-lg-8 -->
-            <div class="col-lg-4 side-right equal_height padding-combo-1">
-                              
-            </div>     
-            </div>
-
-<!-- Add the pagination functions here. -->
-<div class="pagenavi row">
-    <div class="col-lg-3"></div>
-    <div class="col-lg-6">
-    <?php wp_pagenavi(); ?>
-    </div>
-    <div class="col-lg-3"></div>
-</div>
-
-
-
-
-            
-            <div class="row padding-combo-2">
-                <div class="ab-sidebar-right col-lg-4 padding-combo-1">
-                    <?php get_sidebar(); ?>
-                </div>
-                <div class="col-lg-8">
-                    
-            <?php   //Get the content of the JSON file using file_get_contents():
+                        </div>
+                    </div>
+                    <div id="additional-posts" class="row">
+                        <div class="col-lg-12"> 
+                        <?php   //Get the content of the JSON file using file_get_contents():
 
                     $json_file = get_stylesheet_directory_uri().'/mydata.json';
 
@@ -144,11 +125,23 @@
                             </a>           
                         </article>
                     </div>
-                    <?php  $i --;  } ?>
+            <?php  $i --;  } ?>
+                        </div>
+                    </div>     
+                </div> <!-- End of col-lg-8 -->
+            <div class="col-lg-4 side-right equal_height padding-combo-1">
+                <?php get_sidebar(); ?>  
+            </div>     
+            </div>
+
+<!-- Add the pagination functions here. -->
+
+            <div class="row padding-combo-2">
+                <div class="col-lg-8">
+                    
+            
 
                 </div>
-                    
-                
             </div>
 </div>
 
@@ -192,9 +185,7 @@
 <!-- Add the pagination functions here. -->
 <div class="pagenavi row">
     <div class="col-lg-3"></div>
-    <div class="col-lg-6">
-    <?php wp_pagenavi(); ?>
-    </div>
+    <div class="col-lg-6"><?php wp_pagenavi(); ?></div>
     <div class="col-lg-3"></div>
 </div>
 

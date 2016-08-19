@@ -9,7 +9,7 @@
 ?>
 
 	<aside>
-		<ul>
+	<ul>	
 	<li>
 		<div id="cluster-003" class="cluster">
 			<ul id="adlist-005" class="otf-list">
@@ -37,7 +37,9 @@
 				<li class="otf-item-wide"><a href="" class="otf-3to1-rectangle"></a></li>
 			</ul>	
 		</div>
-	</li>		
+	</li>
+	<ul>
+	    <ul>		
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
 	 * the widgets for that widget area. If it instead returns false,

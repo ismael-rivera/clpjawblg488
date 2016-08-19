@@ -64,6 +64,36 @@
 				'before_title' => '<h3>',
 				'after_title' => '</h3>',
 			) );
+			// Area 2, located at the top of the sidebar.
+			register_sidebar( array(
+				'name' => __( 'Secondary Widget Area', 'starkers' ),
+				'id' => 'secondary-widget-area',
+				'description' => __( 'The secondary widget area', 'starkers' ),
+				'before_widget' => '<li>',
+				'after_widget' => '</li>',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>',
+			) );
+			// Area 3, located at the top of the sidebar.
+			register_sidebar( array(
+				'name' => __( 'Tertiary Widget Area', 'starkers' ),
+				'id' => 'tertiary-widget-area',
+				'description' => __( 'The tertiary widget area', 'starkers' ),
+				'before_widget' => '<li>',
+				'after_widget' => '</li>',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>',
+			) );
+			// Area 4, located at the top of the sidebar.
+			register_sidebar( array(
+				'name' => __( 'Quaternary Widget Area', 'starkers' ),
+				'id' => 'quaternary-widget-area',
+				'description' => __( 'The quaternary widget area', 'starkers' ),
+				'before_widget' => '<li>',
+				'after_widget' => '</li>',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>',
+			) );
 
 
 	/* ========================================================================================================================
