@@ -1,7 +1,7 @@
 @import "basefiles/base";
 // Import Bootstrap Compass integration
 
-$bg: #39424D;
+
 $menu-top: #dedede;
 $container-border: #cecece;
 $blue-black: #16242B;
@@ -12,6 +12,9 @@ $red:#BA0303;
 $link-green: #6DBB51;
 $session-header: #2E2E2E;
 $yellow: #FFE600;
+$eggshell: #F2F2F2;
+
+$bg: $eggshell;
 
 html, body {
   font-family: "oswaldregular", helvetica, sans-serif;
@@ -26,7 +29,7 @@ html, body {
 
 .container{
   border: 1px solid $container-border;
-  background-color: #F2F2F2;
+  background-color: $bg;
   margin-top: 1px;
 }
 

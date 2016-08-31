@@ -1,5 +1,5 @@
 <!-- Navigation -->
-    <div id="session-social" class="container">
+    <div id="session-social" class="container-fluid">
         <div class="row">
             <div id="top-social" class="col-lg-4">
                 <!-- <li><a href="index.html" class="menu-link">Facebook</a></li> -->
