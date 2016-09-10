@@ -11,25 +11,7 @@
             <div id="social" class="col-lg-8"></div>
         </div>
     </div>
-    <div id="logo-ads" class="container">
-        <div class="row">
-            <div class="col-lg-2"><a href="" class="otf-rectangle">hfdx</a></div>
-            <div class="col-lg-8">
-                <a href="index.php" class="logo-title">
-                    <?php print_r('<img src="'.get_stylesheet_directory_uri().'/assets/img/logo.png" alt="Kiwi standing on oval">'); ?>
-                </a>
-            </div>
-            <div class="col-lg-2"><a href="" class="otf-rectangle">hfdx</a></div>
-        </div>
-    </div>
-    <div id="header-ad" class="container">
-        <div class="row">
-            <div class="col-lg-2"><div class="button_ad"></div></div>
-            <div class="col-lg-8"><div class="leaderboard_ad"></div></div>
-            <div class="col-lg-2"><div class="button_ad"></div></div>
-        </div>
-    </div>
-    <div id="top-menu" class="container">
+    <div id="top-menu" class="container fborder">
         <div class="row">
             <div id="menu-catalog-center" class="col-lg-12">
               <ul class="catalog-menu">
@@ -47,3 +29,22 @@
             </div>
         </div>
     </div>
+    <div id="logo-ads" class="container fborder">
+        <div class="row">
+            <div class="col-lg-2"><a href="" class="otf-rectangle"></a></div>
+            <div class="col-lg-8">
+                <a href="index.php" class="logo-title">
+                    <?php print_r('<img src="'.get_stylesheet_directory_uri().'/assets/img/logo.png" alt="Kiwi standing on oval">'); ?>
+                </a>
+            </div>
+            <div class="col-lg-2"><a href="" class="otf-rectangle"></a></div>
+        </div>
+    </div>
+    <!-- <div id="header-ad" class="container">
+        <div class="row">
+            <div class="col-lg-2"><div class="button_ad"></div></div>
+            <div class="col-lg-8"><div class="leaderboard_ad"></div></div>
+            <div class="col-lg-2"><div class="button_ad"></div></div>
+        </div>
+    </div> -->
+    

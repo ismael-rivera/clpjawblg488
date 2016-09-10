@@ -71,7 +71,6 @@ html, body {
 
 /* line 30, ../sass/main.scss */
 .container {
-  border: 1px solid #cecece;
   background-color: #F2F2F2;
   margin-top: 1px;
 }
@@ -448,8 +447,6 @@ h1.blog-post-title {
 .catalog-menu {
   text-align: center;
   display: block;
-  border-top: 1px dashed #cecece;
-  border-bottom: 1px dashed #cecece;
 }
 /* line 332, ../sass/main.scss */
 .catalog-menu li {

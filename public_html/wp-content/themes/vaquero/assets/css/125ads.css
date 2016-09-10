@@ -27,7 +27,6 @@
   display: block;
   width: 336px;
   height: 280px;
-  border: 1px solid #cecece;
 }
 
 /* line 23, ../sass/125ads.scss */
@@ -35,7 +34,6 @@
   display: block;
   width: 300px;
   height: 250px;
-  border: 1px solid #cecece;
 }
 
 /* line 29, ../sass/125ads.scss */
@@ -43,7 +41,6 @@
   display: block;
   width: 180px;
   height: 150px;
-  border: 1px solid #cecece;
 }
 
 /* line 35, ../sass/125ads.scss */
@@ -51,7 +48,6 @@
   display: block;
   width: 300px;
   height: 100px;
-  border: 1px solid #cecece;
   float: right;
   margin-top: 10px;
 }
@@ -61,5 +57,4 @@
   display: block;
   width: 125px;
   height: 125px;
-  border: 1px solid #cecece;
 }

@@ -28,7 +28,7 @@ html, body {
 }
 
 .container{
-  border: 1px solid $container-border;
+  //border: 1px solid $container-border;
   background-color: $bg;
   margin-top: 1px;
 }
@@ -343,8 +343,8 @@ h1.blog-post-title{
     background-color: $yellow;
     text-decoration: none;
   }
-  border-top: 1px dashed #cecece;
-  border-bottom: 1px dashed #cecece;
+  // border-top: 1px dashed #cecece;
+  // border-bottom: 1px dashed #cecece;
 }
 
 #top-menu{
